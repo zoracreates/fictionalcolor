@@ -14,6 +14,6 @@ module.exports = function (eleventyConfig) {
     };
 };
 
-    // Set directories to pass through to the dist folder
-    config.addPassthroughCopy('./src/images/');
-    config.addPassthroughCopy('./src/static/site-icons/');
+    // // Set directories to pass through to the dist folder
+    // config.addPassthroughCopy('./src/images/');
+    // config.addPassthroughCopy('./src/static/icons/');
