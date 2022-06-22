@@ -1,0 +1,36 @@
+{
+  "name": "zoracabrera.com",
+  "version": "2.0.0",
+  "description": "UX Designer/Researcher, Writer, Speaker, Educator",
+  "main": ".eleventy.js",
+  "scripts": {
+    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "sass  --no-source-map src/sass:public/css",
+    "build:eleventy": "eleventy",
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:sass build:eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Zoraida",
+    "Cabrera",
+    "Mieles",
+    "Cabrera-Mieles",
+    "UX",
+    "Design",
+    "Research",
+    "Boston",
+    "Puerto Rico"
+  ],
+  "author": "zoracreates",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.52.3"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
