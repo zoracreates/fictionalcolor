@@ -2,6 +2,10 @@ module.exports = function (eleventyConfig) {
   
     eleventyConfig.addWatchTarget("./src/sass/");
 
+    // // Set directories to pass through to the dist folder
+    eleventyConfig.addPassthroughCopy('./src/images/');
+    eleventyConfig.addPassthroughCopy('./src/static/icons/');
+
     return {
         // markdown files, data files, and HTML files should be processed by Nunjucks
         markdownTemplateEngine: 'njk',
@@ -14,6 +18,3 @@ module.exports = function (eleventyConfig) {
     };
 };
 
-    // // Set directories to pass through to the dist folder
-    // config.addPassthroughCopy('./src/images/');
-    // config.addPassthroughCopy('./src/static/icons/');
