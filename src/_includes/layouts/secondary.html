@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include "meta/charset-viewport.html" %}
+        {% include "meta/icons-theming.html" %}
+        {% include "meta/seo-social.html" %}
+        <link rel="stylesheet" href="/css/style.css"/>
+    </head>
+
+    <body>
+        <header>
+            {% include "components/landmarks/nav.html" %}
+            <h1>{{ title }}</h1>
+        </header>
+
+    <main>
+         {% block content %}{% endblock %}
+    </main>
+        
+
+        {% include "components/landmarks/footer.html" %}
+
+    </body>
+
+</html>

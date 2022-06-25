@@ -32,7 +32,7 @@
             </h4>
             <p class="u-small">
                 <span class="label">Published:</span>
-                <time dateTime="{{ feature.numericalDate }}">{{ feature.readableDate }}</time>
+                <time dateTime="{{ feature.date }}">{{ feature.date | formatDate }}</time>
             </p>
             <p class="u-med">{{ feature.description }}</p>
 
