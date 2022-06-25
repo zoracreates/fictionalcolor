@@ -1,6 +1,6 @@
 ---
 title: "Blog"
 description: "My blog"
-layout: "layouts/home.html"
+layout: "layouts/blog.html"
 ---
 This is pretty _rad_, **right**

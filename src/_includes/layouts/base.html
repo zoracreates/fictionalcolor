@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 
-<header>
-    {% include "components/header.html" %}
-</header>
+
 
 <body>
+
+    {% include "components/landmarks/header.html" %}
+
     {% block content %}{% endblock %}
+    
+    {% include "components/landmarks/footer.html" %}
+
 </body>
 
 </html>

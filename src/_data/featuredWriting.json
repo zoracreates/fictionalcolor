@@ -1,0 +1,21 @@
+{
+    "features": [
+      {
+        "title" : "Modular and Dynamic Type Scales with Plain CSS", 
+        "publication": "Hackernoon",
+        "numericalDate" : "2019-06-05",
+        "readableDate" : "June 5, 2019",
+        "url" : "https://medium.com/hackernoon/modular-and-dynamic-type-scales-with-plain-css-41f86197bdf0",
+        "description" : "Type scales can be difficult to maintain, but CSS Custom Properties can help."
+    },
+    {
+      "title": "The rainbow sheet: a visual method for research analysis",
+      "publication" : "UX Collective",
+      "numericalDate" : "2019-02-16",
+      "readableDate": "February 16, 2019",
+      "url" : "https://uxdesign.cc/the-rainbow-sheet-a-visual-method-for-research-analysis-a7e7d2011058",
+      "description" : "How the rainbow spreadsheet helped evaluate Harvard’s new visualizations-based course-selection tool."
+    }
+
+    ]
+}

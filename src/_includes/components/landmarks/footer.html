@@ -1,0 +1,15 @@
+<footer>
+    © Zoraida Cabrera-Mieles 2022
+    <a href="/blog">Read my blog</a>
+
+    <ul class="social">
+        {% for channel in socialChannels.channels %}
+        <li>
+            <a href="{{ channel.url }}">
+                <img src="{{ channel.iconSrc }}" alt="{{ channel.name }} icon" />
+                <span>Zoraida's {{ channel.name }}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</footer>

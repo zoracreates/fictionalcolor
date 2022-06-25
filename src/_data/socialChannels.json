@@ -1,0 +1,24 @@
+{
+    "channels": [
+      {
+        "name": "GitHub",
+        "iconSrc" : "/images/social/github.png",
+        "url": "https://github.com/zoracreates"
+      },
+      {
+        "name": "Twitter",
+        "iconSrc" : "/images/social/twitter.png",
+        "url": "https://twitter.com/zoracreates/"
+      },
+      {
+        "name": "LinkedIn",
+        "iconSrc" : "/images/social/linkedin.png",
+        "url": "https://www.linkedin.com/in/zoracabrera/"
+      },
+      {
+        "name": "Medium",
+        "iconSrc" : "/images/social/medium.png",
+        "url": "https://zoracabrera.medium.com/"
+      }
+    ]
+  }
