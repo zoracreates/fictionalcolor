@@ -1,15 +1,21 @@
 <footer>
-    © Zoraida Cabrera-Mieles 2022
-    <a href="/blog">Read my blog</a>
+    <div class="wrapper-lg">
+        <p>© Zoraida Cabrera-Mieles 2022</p>
+        <p>
+            <a href={`mailto:zmcabrera@gmail.com`}>zmcabrera@gmail.com</a>
+        </p>
+        <a href="/blog">Read Blog</a>
 
-    <ul class="social">
-        {% for channel in socialChannels.channels %}
-        <li>
-            <a href="{{ channel.url }}">
-                <img src="{{ channel.iconSrc }}" alt="{{ channel.name }} icon" />
-                <span>Zoraida's {{ channel.name }}</span>
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
+        <ul class="social">
+            {% for channel in socialChannels.channels %}
+                <li>
+                    <a href="{{ channel.url }}">
+                        <img src="{{ channel.iconSrc }}" alt="{{ channel.name }} icon"/>
+                        <span>Zoraida's
+                            {{ channel.name }}</span>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 </footer>

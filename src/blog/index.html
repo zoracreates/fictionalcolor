@@ -2,7 +2,24 @@
 {% set title = "Blog" %}
 {%set description = "Writings about a UX, a career in tech, and inclusive research and design." %}
 
-
 {% block content %}
-<p>blog stuff</p>
+    <div class="wrapper-lg">
+        <ul class="wrapper-md block-center post-list">
+
+            <li class="card" key={post.id}>
+                <h2>
+                    <a href="">
+                        title
+                    </a>
+                </h2>
+                <p class="u-small">
+                    <span class="label">Posted:</span>
+                    <time datetime="DATE">
+                        date</time>
+                </p>
+                <p>excerpt</p>
+            </li>
+
+        </ul>
+    </div>
 {% endblock %}
