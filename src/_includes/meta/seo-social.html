@@ -1,21 +1,34 @@
+{% if title %}
+  {% set pageTitle = title %}
+{% else %}
+  {%set pageTitle = metadata.title %}
+{% endif %}
 
-<title>
-    {% if title %}
-      {{ title }} | {{ metadata.title }}
-      {% else %}
-      {{ metadata.title }}
-    {% endif %}
-</title>
+{% if excerpt %}
+  {% set pageDescription = excerpt %}
+{% elseif description %}
+  {% set pageDescription = description %}
+{% else %}
+  {% set pageDescription = metadata.description %}
+{% endif %}
 
-<meta name="description" content="{% if excerpt %}{{ excerpt }}{% elseif description %}{{ description }}{% else %}{{ metadata.description }}{% endif %}">
-<meta name="author" content="{{ metadata.author.name }}" />
-<meta name="keywords" content="{% if tags %}{{ tags }}{% else %}{{ metadata.keywords }}{% endif%}" />
+{% if tags %}
+  {% set pageKeywords = tags %}
+{% else %}
+  {% set pageKeywords = metadata.keywords %}
+{% endif%}
 
-<meta property="og:type" content="website" />
-<meta property="og:title" content="{% if title %} {{ title }} | {{ metadata.title }} {% else %} {{ metadata.title }} {% endif %}" />
-<meta property="og:description" content="{% if excerpt %}{{ excerpt }}{% elseif description %}{{ description }}{% else %}{{ metadata.description }}{% endif %}" />
+  <title>{{ pageTitle }}</title>
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:creator" content="{{ metadata.social.twitter }}" />
-<meta name="twitter:title" content="{% if title %} {{ title }} | {{ metadata.title }} {% else %} {{ metadata.title }} {% endif %}"/>
-<meta name="twitter:description" content="{% if excerpt %}{{ excerpt }}{% elseif description %}{{ description }}{% else %}{{ metadata.description }}{% endif %}" />
+  <meta name="description" content="{{ pageDescription }}">
+  <meta name="author" content="{{ metadata.author.name }}"/>
+  <meta name="keywords" content="{{ pageKeywords }}"/>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="{{ pageTitle }}"/>
+  <meta property="og:description" content="{{ pageDescription }}"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:creator" content="{{ metadata.social.twitter }}"/>
+  <meta name="twitter:title" content="{{ pageTitle }}"/>
+  <meta name="twitter:description" content="{{ pageDescription }}"/>
