@@ -12,8 +12,8 @@ async function imageShortcode(src, alt, sizes = '(min-width: 1024px) 100vw, 50vw
             const basename = path.basename(src, extension)
             let dir = path.dirname(src);
             dir = dir.replace('.\/src\/images\/','');
+            dir = dir.replace('.\/src\/images','');
             dir = dir.replace(/\//g, '_');
-            dir = dir.replace(/\./g, '_');
             const name = `${dir}_${basename}`
             return `${name}-${width}w.${format}`
           }
