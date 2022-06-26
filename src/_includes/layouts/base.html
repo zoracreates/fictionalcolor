@@ -7,8 +7,11 @@
      {% include "meta/seo-social.html" %}
     <link rel="stylesheet" href="/css/style.css" />
 </head>
-
+{% if pageId %}
+<body id="{{ pageId}}">
+{% else %}
 <body>
+{% endif %}
 
     {% block content %}{% endblock %}
     

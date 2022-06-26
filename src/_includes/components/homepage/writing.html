@@ -11,33 +11,39 @@
                     post title
                 </a>
             </h4>
-            <p class="u-small"><span class="label">Posted:</span> <time dateTime="">post date</time></p>
+            <p class="u-small">
+                <span class="label">Posted:</span>
+                <time datetime="">post date</time>
+            </p>
             <p class="u-med">postexceprt</p>
         </li>
     </ul>
 
     <a class="text-btn" href="/blog">See All Blog Posts</a>
 
-
     <h3 class="u-header">Written Elsewhere</h3>
     <ul class="post-list cols-50-50">
 
         {% for feature in featuredWriting.features %}
-        <li class="col card">
-            <h4>
-                <a href="{{ feature.url }}">
-                    "{{ feature.title }},"
-                    <i>{{ feature.publication }}</i></a>
+            <li class="col card">
+                <h4>
+                    <a href="{{ feature.url }}">
+                        {{ feature.title }}
+                    </a>
                 </a>
             </h4>
             <p class="u-small">
                 <span class="label">Published:</span>
-                <time dateTime="{{ feature.date }}">{{ feature.date | formatDate }}</time>
+                <time datetime="{{ feature.date }}">{{ feature.date | formatDate }}</time>
+            </p>
+            <p class="u-small">
+                <span class="label">Publication:</span>
+                 <i>{{ feature.publication }}</i>
             </p>
             <p class="u-med">{{ feature.description }}</p>
 
         </li>
 
-        {% endfor %}
-    </ul>
+    {% endfor %}
+</ul>
 </div>

@@ -220,6 +220,11 @@ ul.social span,
   justify-content: center;
 }
 
+#home .card h3 {
+  font-size: $h4-size;
+  margin-bottom: 0px;
+}
+
 .card h2 a,
 .card h3 a,
 .card h4 a {
@@ -441,8 +446,8 @@ p.hero-text {
   margin-bottom: 5px;
 }
 
-.post-list li h4,
-.post-list li h2,
+.post-list .card h4,
+.post-list .card h2,
 .cta h4 {
   margin-top: 0px;
   margin-bottom: 0px;
