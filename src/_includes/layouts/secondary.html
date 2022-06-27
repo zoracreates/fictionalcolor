@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
     {% include "meta/head.html" %}
@@ -9,19 +10,19 @@
         <body>
     {% endif %}
 
-            <header>
-                {% include "components/landmarks/nav.html" %}
-                <div class="wrapper-lg hero-band">
-                    <h1>{{ title }}</h1>
-                </div>
-            </header>
+        <header>
+            {% include "components/landmarks/nav.html" %}
+            <div class="wrapper-lg hero-band">
+                <h1>{{ title }}</h1>
+            </div>
+        </header>
 
-            <main>
-                {% block content %}{% endblock %}
-            </main>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
 
             {% include "components/landmarks/footer.html" %}
 
-        </body>
+    </body>
 
-    </html>
+</html>
