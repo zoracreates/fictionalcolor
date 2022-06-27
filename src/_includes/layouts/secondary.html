@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {% include "meta/charset-viewport.html" %}
-        {% include "meta/icons-theming.html" %}
-        {% include "meta/seo-social.html" %}
-        <link rel="stylesheet" href="/css/style.css"/>
-    </head>
 
-    <body>
-        <header>
-            {% include "components/landmarks/nav.html" %}
-            <div class="wrapper-lg hero-band">
-            <h1>{{ title }}</h1>
-            </div>
-        </header>
+    {% include "meta/head.html" %}
 
-    <main>
-         {% block content %}{% endblock %}
-    </main>
-        
+    {% if pageId %}
+        <body id="{{ pageId }}">
+    {% else %}
+        <body>
+    {% endif %}
 
-        {% include "components/landmarks/footer.html" %}
+            <header>
+                {% include "components/landmarks/nav.html" %}
+                <div class="wrapper-lg hero-band">
+                    <h1>{{ title }}</h1>
+                </div>
+            </header>
 
-    </body>
+            <main>
+                {% block content %}{% endblock %}
+            </main>
 
-</html>
+            {% include "components/landmarks/footer.html" %}
+
+        </body>
+
+    </html>

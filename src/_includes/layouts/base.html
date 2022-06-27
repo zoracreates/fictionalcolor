@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    {% include "meta/charset-viewport.html" %}
-    {% include "meta/icons-theming.html" %}
-     {% include "meta/seo-social.html" %}
-    <link rel="stylesheet" href="/css/style.css" />
-</head>
-{% if pageId %}
-<body id="{{ pageId}}">
-{% else %}
-<body>
-{% endif %}
+    {% include "meta/head.html" %}
 
-    {% block content %}{% endblock %}
-    
-    {% include "components/landmarks/footer.html" %}
+    {% if pageId %}
+        <body id="{{ pageId }}">
+    {% else %}
+        <body>
+    {% endif %}
 
-</body>
+            {% block content %}{% endblock %}
 
-</html>
+            {% include "components/landmarks/footer.html" %}
+
+        </body>
+
+    </html>
