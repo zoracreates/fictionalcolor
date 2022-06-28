@@ -1,6 +1,9 @@
-{% extends "layouts/base.html" %}
-{% set pageId = "post"%}
-{% block content %}
+
+{% extends "layouts/base.html"%}
+{% set pageId = "post" %}
+{% set previousPost = collections.work | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.work | getNextCollectionItem(page) %}
+{% block content %} 
     <header>
         <div class="nav-wrapper">
             {% include "components/landmarks/nav.html" %}
@@ -24,20 +27,24 @@
             </nav>
         </div>
 
-         {% include "components/work-posts/project-header.html" %}
+         {% include "components/posts/work-posts/project-header.html" %}
     </header>
 
     <main>
     <div>
         <article class="project">
-             {% include "components/work-posts/project-overview.html" %}
+            {% include "components/posts/work-posts/project-overview.html" %}
             {{ content | safe }}
         </article>
     </div>
+
+
+   
+
     </main>
 
-   
+    {% include "components/posts/previous-next.html" %}
 
    
 
-    {% endblock%}
+  {% endblock%}

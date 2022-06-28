@@ -96,7 +96,7 @@ nav {
   padding-bottom: 10px;
 }
 
-nav a {
+header nav a {
   font-size: 0.85028rem;
   text-transform: uppercase;
   position: relative;
@@ -376,8 +376,8 @@ a.text-btn:hover::after {
 }
 
 .hero-band a,
-nav a {
-  color: $background-color;
+header nav a {
+  color: $white;
 }
 
 .logo {
@@ -483,7 +483,7 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
   padding: 35px 0px;
 }
 
-.post-nav h2:last-child {
+.post-nav divnav div:last-child {
   margin-bottom: 0;
 }
 
@@ -491,19 +491,20 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
   text-decoration: none;
 }
 
-.post-nav h2 {
+.post-nav div {
   margin-top: 0px;
 }
 
-.post-nav h2 a {
+.post-nav div a {
   font-size: $h4-size;
+  font-weight: 900;
 }
 
-.post-nav h2 span {
+.post-nav div span {
   @include bold-font;
 }
 
-.post-nav h2 span {
+.post-nav div span {
   font-size: $h6-size;
 }
 
@@ -520,11 +521,11 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
 }
 
 .label,
-.post-nav h2 span {
+.post-nav div span {
   color: $text-color;
 }
 
-.post-nav h2 span {
+.post-nav div span {
   text-transform: uppercase;
   display: block;
 }
@@ -935,7 +936,7 @@ blockquote span {
     justify-content: space-between;
   }
 
-  .post-nav h2 {
+  .post-nav div {
     margin-bottom: 0;
     max-width: 40%;
   }
