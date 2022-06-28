@@ -1,12 +1,12 @@
 ---
 published: true
 date: 2019-10-14
-categories: UX Research
+categories: [ "UX Research" ]
 title: Discovery and Exploratory Research for HarvardKey 2.0
 description: I participated in the analysis of interviews and in the initial journeymapping of a new login system of Harvard online resources.
 featuredImage: ./src/images/work/2019-harvardkey-discovery/hk-discovery-project-card.png
 featuredImageAlt: Section of an affinity map created for HarvardKey 2.0
-importance: 1
+displayOrder: 1
 ---
 
 <!-- <ProjectOverview 

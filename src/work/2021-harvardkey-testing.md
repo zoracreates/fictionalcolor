@@ -1,12 +1,12 @@
 ---
 published: true
 date: 2021-05-01
-categories: UX Research
+categories: [ "UX Research" ]
 title: Prototype Testing for HarvardKey 2.0
 description: I conducted a moderated usability study for a prototype version of HarvardKey 2.0
 featuredImage: ./src/images/work/2021-harvardkey-testing/hk-testing-project-card.png
 featuredImageAlt: HavardKey 2.0 Log in screen
-importance: 2
+displayOrder: 2
 ---
 
 <!-- <ProjectOverview 

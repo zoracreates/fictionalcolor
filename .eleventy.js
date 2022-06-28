@@ -66,6 +66,13 @@ module.exports = function (eleventyConfig) {
 
     });
 
+    //collections
+    eleventyConfig.addCollection('work', collection => {
+        return collection
+          .getFilteredByGlob('./src/work/*.md')
+          .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1));
+      });
+
 
     return {
         // markdown files, data files, and HTML files should be processed by Nunjucks

@@ -4,9 +4,7 @@
   {%set pageTitle = metadata.title %}
 {% endif %}
 
-{% if excerpt %}
-  {% set pageDescription = excerpt %}
-{% elseif description %}
+{% if description %}
   {% set pageDescription = description %}
 {% else %}
   {% set pageDescription = metadata.description %}

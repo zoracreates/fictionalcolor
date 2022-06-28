@@ -1,12 +1,12 @@
 ---
 published: true
 date: 2021-06-01
-categories: UX Research, Experience Design
+categories: [ "UX Research" , "Experience Design" ]
 title: Research, Information Architecture, and Experience Design for the Harvard Institute for Learning in Retirement Community Website
 description: I redesigned a private Community Website for Harvard Institute for Learning in Retirement (HILR), focusing on information architecture and experience design. During the project, I also conducted a user survey and a comparative tree test.
 featuredImage: ./src/images/work/2021-hilr/hilr-project-card.png
 featuredImageAlt: Harvard Institute for Learning in Retirement Community Website on a laptop, on a phone, and on a tablet
-importance: 3
+displayOrder: 3
 ---
 
 <!-- <ProjectOverview 

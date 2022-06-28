@@ -6,24 +6,36 @@
     <main>
         <div class="wrapper-lg">
             <ul class="post-list block-center">
-
+            {% for item in collections.work %}
                 <li class="card cols-40-60" key={post.id}>
                     <div class="col featured-image">
-                        image
+                     {% image item.data.featuredImage, item.data.featuredImageAlt  %}   
                     </div>
                     <div class="col card-title">
                         <h2>
-                            <a href="">
-                                title
+                            <a href="{{ item.url }}">
+                                {{ item.data.title }}
                             </a>
                         </h2>
                         <p class="u-small">
                             <span class="label">Project Type:</span>
-                            categories</p>
+                            {% for category in item.data.categories %}
+
+                             {% if loop.last %}
+                                {{ category }}
+                            {% else%}
+                                {{ category }},
+                            {% endif %}
+
+                            {% endfor%}
+                             
+                             </p>
                     </div>
                 </li>
+            {% endfor %}
             </ul>
         </main>
+
         <aside class="wrapper-lg">
             <h2>Want learn more?</h2>
             <p>If you want to see more of my work or talk about what I do, get in touch!</p>
