@@ -1,0 +1,43 @@
+{% extends "layouts/base.html" %}
+{% set pageId = "post"%}
+{% block content %}
+    <header>
+        <div class="nav-wrapper">
+            {% include "components/landmarks/nav.html" %}
+        </div>
+
+        <div class="breadcrumb-wrapper">
+
+            <nav class="wrapper-lg" aria-label="breadcrumbs">
+                <ol class="nav-list">
+                    <li>
+                        <a href="/">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/work">
+                            Work
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <h1>{{ title}}</h1>
+    </header>
+
+    <main>
+    <div>
+        <article class="project">
+             {% include "components/work-posts/project-overview.html" %}
+            {{ content | safe }}
+        </article>
+    </div>
+    </main>
+
+   
+
+   
+
+    {% endblock%}

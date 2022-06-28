@@ -2,7 +2,7 @@
     <nav class="wrapper-lg">
         <a class="logo" href="/">Zoraida</a>
 
-        <ul class="nav__list">
+        <ul class="nav-list">
             {% for item in navigation.items %}
             <li>
                 <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>

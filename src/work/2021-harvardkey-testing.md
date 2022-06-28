@@ -7,27 +7,12 @@ description: I conducted a moderated usability study for a prototype version of 
 featuredImage: ./src/images/work/2021-harvardkey-testing/hk-testing-project-card.png
 featuredImageAlt: HavardKey 2.0 Log in screen
 displayOrder: 2
+projectOverview:
+    teamAndTimeline: 1 month start to finish, with a 3-person team working remotely.
+    responsabilities: [ "Usability Testing", "Research Analysis", "Reporting Findings" ]
+    tools: [ "Zoom", "Google Sheets" ]
+    outcome: Findings created alignment around final changes, and HarvardKey 2.0 successfully launched 2 months after testing.
 ---
-
-<!-- <ProjectOverview 
-    summary={props.frontmatter.description}
-    teamAndTimeline="1 month start to finish, with a 3-person team working remotely."
-    responsabilitiesList={
-        [
-            "Usability Testing",
-            "Research Analysis",
-            "Reporting Findings"
-        ]
-    }
-    toolsList={
-        [
-            "Zoom",
-            "Google Sheets"
-        ]
-    }
-    outcome="Findings created alignment around final changes, and HarvardKey 2.0 successfully launched 2 months after testing."
-/> -->
-
 ## Problem and Context
 
 In 2019 the Harvard Identity and Access Management team began a project to improve the login experience of people who only needed access to Harvard resources for a short time, such as a one-semester course. These individuals were using an authentication system called XID, while those with longer-term relationships with Harvard used a system called HarvardKey. The [exploratory research of this project](/work/2019-harvardkey-discovery) led to the decision that Harvard needed a complete redesign of the existing login system called HarvardKey. This system needed both to incorporate those with a short-term relationship with Harvard and have an upgraded UI, making it easier for anyone related to Harvard to create their HarvardKey account and update their information. For 2 years, IAM iterated over the design of HarvardKey 2.0, and in April of 2021, it became ready for usability testing before its official launch.
@@ -37,7 +22,7 @@ The HarvardKey 2.0 team started from high leadership in Harvard. However, the co
 
 ## What I did
 
-### [Usability Testing](#usability-testing)
+<h3 id="usability-testing">Usability Testing</h3>
 
 #### During testing, we wanted to answer the following questions:
 * Are users able to perform the following standard authentication tasks efficiently and easily?
@@ -52,9 +37,9 @@ The HarvardKey 2.0 team started from high leadership in Harvard. However, the co
 
 The HWP conducted 30-minute Zoom sessions with 13 participants to answer these questions. Unfortunately, because potential users had short-lived relationships with Harvard, we had difficulty connecting with many of them. Therefore, 10 participants were people who had experience working with or providing authentication support to potential users.
 
-{% image "./src/images/work/2021-harvardkey-testing/hk-testing.png", "Me moderating a HavardKey 2.0 usability testing session." %}
+<div class="image-wrapper">{% image "./src/images/work/2021-harvardkey-testing/hk-testing.png", "Me moderating a HavardKey 2.0 usability testing session." %}</div>
 
-### [Research Analysis](#research-analysis)
+<h3 id="research-analysis">Research Analysis</h3>
 
 #### I created a modified version of Tomer Sharon’s Rainbow Spreadsheet to analyze the data. This method allowed the team to watch recordings and take notes collaboratively and asynchronously.
 
@@ -62,9 +47,9 @@ Sharon’s note-taking tool is a go-to for HWP. It works similarly to an affinit
 
 Although we found the tool helpful, I found that certain aspects of the sheet didn’t fit our workflow. For example, on a typical Rainbow Spreadsheet, each participant is assigned a color. This color marks if the participant performed an action noted in the Observations column. But we often found it more beneficial to see patterns per audience and not per participant. Therefore I decided to use a color per audience segment. I also added a column that calculated how many users had performed an observation. 
 
-{% image "./src/images/work/2021-harvardkey-testing/hk-rainbow.png", "Section of the HarvardKey 2.0 rainbow spreadheet." %}
+<div class="image-wrapper">{% image "./src/images/work/2021-harvardkey-testing/hk-rainbow.png", "Section of the HarvardKey 2.0 rainbow spreadheet." %}</div>
 
-### [Reporting Findings](#reporting-findings)
+<h3 id="reporting-findings">Reporting Findings</h3>
 
 We presented our results to the IAM team through a deck, in which we prioritized three areas of improvement.
 
@@ -76,7 +61,7 @@ The IAM team had little room for making password requirements less strict. But m
 <span>Administrative staff, HUIT</span>
 </blockquote>
 
-{% image "./src/images/work/2021-harvardkey-testing/hk-password.png", "Report slide showing the issues with password creationg and the recommendations." %}
+<div class="image-wrapper">{% image "./src/images/work/2021-harvardkey-testing/hk-password.png", "Report slide showing the issues with password creationg and the recommendations." %}</div>
 
 #### 2. Avoiding dead ends
 During our usability test, we observed that after users changed the name on their profile, they did not immediately know how to get back to the profile page to verify the change. To solve this problem, I recommended adding a “View Profile” button immediately below the Name Changed confirmation message and emphasized the importance of avoiding dead-ends overall.
@@ -86,7 +71,7 @@ During our usability test, we observed that after users changed the name on thei
 <span>XID User, IAM</span>
 </blockquote>
 
-{% image "./src/images/work/2021-harvardkey-testing/hk-deadend.png", "Report slide showing the issues with dead ends and the recommendations." %}
+<div class="image-wrapper">{% image "./src/images/work/2021-harvardkey-testing/hk-deadend.png", "Report slide showing the issues with dead ends and the recommendations." %}</div>
 
 #### 3. Providing context and consistent branding around HarvardKey
 A few participants mentioned that from their experience, the term “HarvardKey” might be foreign to someone outside of Harvard. I, therefore, suggested using the word “account” in the account creation key to indicate the meaning of HarvardKey. Furthermore, we heard a few users mention that the unbranded emails they received were easy to read but seemed outdated and somewhat unreliable because they had no Harvard branding. Thus we recommended adding the HarvardKey logo to the emails.
@@ -95,7 +80,7 @@ A few participants mentioned that from their experience, the term “HarvardKey�
 <span>Admin, GSE IT</span>
 </blockquote>
 
-{% image "./src/images/work/2021-harvardkey-testing/hk-branding.png", "Report slide showing the issues with email and messaging around HarvardKey and the recommendations." %}
+<div class="image-wrapper">{% image "./src/images/work/2021-harvardkey-testing/hk-branding.png", "Report slide showing the issues with email and messaging around HarvardKey and the recommendations." %}</div>
 
 ## Impact
 ### Testing helped create priorities and alignment about final changes to the HarvardKey 2.0 interface.  

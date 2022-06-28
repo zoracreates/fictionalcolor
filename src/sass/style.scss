@@ -122,7 +122,7 @@ footer a {
 }
 
 .hero-band ul,
-header ul,
+nav .nav-list,
 footer ul {
   display: flex;
   flex-wrap: wrap;
@@ -130,7 +130,7 @@ footer ul {
   margin-left: 0;
 }
 
-header ul,
+nav .nav-list,
 footer ul,
 footer p {
   margin: 10px 0;
@@ -143,7 +143,7 @@ footer ul:last-child {
 }
 
 .hero-band ul li,
-header ul li,
+nav .nav-list li,
 footer ul li {
   margin-bottom: 0;
 }
@@ -162,13 +162,13 @@ ul.social img {
 }
 
 .hero-band ul li,
-header ul li,
+nav .nav-list li,
 footer ul li {
   list-style: none;
   padding-left: 0;
 }
 
-header ul li,
+nav .nav-list li,
 footer ul li {
   padding-right: 20px;
 }
@@ -370,7 +370,6 @@ a.text-btn:hover::after {
 /* hero and logo*/
 
 .hero-band {
-  background: $primary-color;
   padding-top: 10px;
   color: $background-color;
   margin-bottom: 15px;
@@ -408,14 +407,76 @@ p.hero-text {
 /* blog and post styles */
 
 #post header {
+  padding: 0px;
+  margin-bottom: 0px;
+  background-color: transparent;
+}
+
+nav.wrapper-lg {
   margin-bottom: 0px;
 }
 
-#post {
-  ol,
-  ul {
-    padding-left: 2rem;
+#post .nav-wrapper {
+  padding: 35px 0px;
+  background-color: $primary-color;
+}
+
+ nav[aria-label="breadcrumbs"] {
+
+  border-bottom: 0px;
+  padding-top: 35px; 
+  padding-bottom: 0px;
+  
+
+
+  li {
+    font-weight: 700;
+    padding-right: 7px;
+    &::after {
+      content: '/';
+      font-size: .8em;
+    }
+
+    a {
+      color: $primary-color;
+      font-weight: 700;
+      &::after {
+        height: 2px;
+        background-color: $black;
+      }
+    }
+
   }
+
+}
+
+nav[aria-label="breadcrumbs"] ol.nav-list {
+  margin: 0px;
+  padding: 0px
+}
+
+#post h1 {
+  color: $black;
+  margin-top: 0px;
+}
+
+#post {
+  main {
+    ol,
+    ul {
+      padding-left: 2rem;
+    }
+  }
+
+}
+
+#post .image-wrapper {
+  margin: auto;
+  display: block;
+  margin-top: 60px;
+  max-width: 950px;
+  width: 92%;
+  margin-bottom: 60px;
 }
 
 #post > div {
