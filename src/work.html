@@ -1,33 +1,33 @@
 {% extends "layouts/secondary.html" %}
 {% set title = "Work" %}
-{%set description = "UX design and research case studies" %}
+{% set description = "UX design and research case studies" %}
 
-{% block content %}
-    <div class="wrapper-lg">
-        <ul class="post-list block-center">
+{% block mainContent %}
+    <main>
+        <div class="wrapper-lg">
+            <ul class="post-list block-center">
 
-            <li class="card cols-40-60" key={post.id}>
-                <div class="col featured-image">
-                    image
-                </div>
-                <div class="col card-title">
-                    <h2>
-                        <a href="">
-                            title
-                        </a>
-                    </h2>
-                    <p class="u-small">
-                        <span class="label">Project Type:</span>
-                        categories</p>
-                </div>
-            </li>
-        </ul>
-
-        <aside>
+                <li class="card cols-40-60" key={post.id}>
+                    <div class="col featured-image">
+                        image
+                    </div>
+                    <div class="col card-title">
+                        <h2>
+                            <a href="">
+                                title
+                            </a>
+                        </h2>
+                        <p class="u-small">
+                            <span class="label">Project Type:</span>
+                            categories</p>
+                    </div>
+                </li>
+            </ul>
+        </main>
+        <aside class="wrapper-lg">
             <h2>Want learn more?</h2>
             <p>If you want to see more of my work or talk about what I do, get in touch!</p>
             <a class="btn" href="mailto:zmcabrera@gmail.com">Email Me</a>
         </aside>
     </div>
-
-    {% endblock%}
+{% endblock %}

@@ -1,28 +1,14 @@
-<!DOCTYPE html>
+{% extends "layouts/base.html" %}
 
-<html lang="en">
+{% block content %}
 
-    {% include "meta/head.html" %}
+    <header>
+        {% include "components/landmarks/nav.html" %}
+        <div class="wrapper-lg hero-band">
+            <h1>{{ title }}</h1>
+        </div>
+    </header>
 
-    {% if pageId %}
-        <body id="{{ pageId }}">
-    {% else %}
-        <body>
-    {% endif %}
+    {% block mainContent %}{% endblock %}
 
-        <header>
-            {% include "components/landmarks/nav.html" %}
-            <div class="wrapper-lg hero-band">
-                <h1>{{ title }}</h1>
-            </div>
-        </header>
-
-        <main>
-            {% block content %}{% endblock %}
-        </main>
-
-            {% include "components/landmarks/footer.html" %}
-
-    </body>
-
-</html>
+{% endblock %}
