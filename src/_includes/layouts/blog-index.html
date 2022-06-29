@@ -1,0 +1,27 @@
+{% extends "layouts/secondary-base.html" %}
+{% set postListItems = pagination.items %}
+
+{% block mainContent %}
+<main>
+    <div class="wrapper-lg">
+        <ul class="wrapper-md block-center post-list">
+             {% for item in postListItems %}
+            <li class="card">
+                <h2>
+                    <a href="{{ item.url }}">
+                       {{ item.data.title }}
+                    </a>
+                </h2>
+                <p class="u-small">
+                    <span class="label">Posted:</span>
+                    <time datetime="{{ item.data.date }}">
+                        {{ item.data.date | formatDate  }}</time>
+                </p>
+                <p>{{ item.data.description }}</p>
+            </li>
+            {% endfor %}
+
+        </ul>
+    </div>
+</main>
+{% endblock %}

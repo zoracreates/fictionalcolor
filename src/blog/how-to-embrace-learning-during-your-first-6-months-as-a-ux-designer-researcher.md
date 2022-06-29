@@ -1,6 +1,6 @@
 ---
 title: How to embrace learning during your first 6 months as a UX Designer/Researcher
-tags: [ "Career Development" ]
+tags: [ "career development" ]
 date: 2020-03-29
 description: Lessons from my first 6 months working at Harvard
 ---

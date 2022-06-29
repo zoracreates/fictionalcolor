@@ -1,6 +1,6 @@
 ---
 title: The Point of Models and Explaining your UX process
-tags: [ "UX Design", "UX Research", "design process" ]
+tags: [ "UX design", "UX research", "design process" ]
 date: 2021-02-08
 description: Where UX process diagrams help and fail
 ---

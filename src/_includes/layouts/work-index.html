@@ -1,4 +1,4 @@
-{% extends "layouts/secondary.html" %}
+{% extends "layouts/secondary-base.html" %}
 {% set title = "Work" %}
 {% set description = "UX design and research case studies" %}
 
@@ -7,7 +7,7 @@
         <div class="wrapper-lg">
             <ul class="post-list block-center">
             {% for item in collections.work %}
-                <li class="card cols-40-60" key={post.id}>
+                <li class="card cols-40-60">
                     <div class="col featured-image">
                      {% image item.data.featuredImage, item.data.featuredImageAlt  %}   
                     </div>

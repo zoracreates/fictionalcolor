@@ -1,6 +1,6 @@
 ---
 title: A quest for the right remote usability testing tool
-tags: [ "UX Research", "UXR Tools", "usability testing" ]
+tags: [ "UX research", "UXR tools", "usability testing" ]
 date: 2020-06-01
 description: How to decide on a usability testing tool
 ---
