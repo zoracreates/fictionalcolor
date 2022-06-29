@@ -1,8 +1,7 @@
 ---
 title: How to embrace learning during your first 6 months as a UX Designer/Researcher
-tags: ux design, ux research, career development
+tags: [ "Career Development" ]
 date: 2020-03-29
-published: true
 description: Lessons from my first 6 months working at Harvard
 ---
 
@@ -20,7 +19,9 @@ What I didn’t realize was how many gaps I had in terms of the team’s design 
 
 I soon realized, I needed to sit back and ask questions. I made an effort to speak to my fellow team members individually, and understand what they could help me with, and what they needed from me.
 
-![coffee with a book and a laptop](../../images/blog/coffee-laptop.jpg)
+<div class="image-wrapper"> 
+{% image  "./src/images/blog/coffee-laptop.jpg", "coffee with a book and a laptop" %}
+</div>
 
 ## Discover the gaps, and realize they will change
 
@@ -36,7 +37,9 @@ Initially I felt disappointed by this feedback. How could I fail on something so
 
 I needed to look past the word “under-designed.” The real problem wasn’t a lack of flare, it wasn’t the need to “make it pop.” The full critique was the website’s “bands look under designed.” We use the term “bands” to refer to sections of content within a page. The real problem was that the division of content was not visually clear. I needed to improve the hierarchy and make each section of content work individually through better visual queues. Once I approached the issue as a design problem, I was able to deliver a better visual design.
 
-![two versions of a website design, one with well defined bands and one with an undefined content hierarchy](../../images/blog/click-wisely.png)      
+<div class="image-wrapper"> 
+{% image "./src/images/blog/click-wisely.png", "two versions of a website design, one with well defined bands and one with an undefined content hierarchy" %}
+</div>    
 
 ## Speak up, they hired you for your ideas
 
@@ -52,7 +55,9 @@ As a designer, you are not working alone, and listening to others is extremely i
 
 That said, it’s unreasonable to agree to everything. If data exists showing that an idea will hinder the user’s experience, communicate this point appropriately. For example, I had a client once suggest the use of all caps in the headings of their website. I suggested that blocks of text with capital letters could reduce readability. Multiple studies have shown this problem, but there’s some debate on whether all caps should be avoided completely. After working together on the font-hierarchy for the site, we decided to use all caps on shorter headings, and avoid them where the headings may be longer.
 
-![two versions of a font hierarchy using all caps in different headings](../../images/blog/mahindra-fonts.png)      
+<div class="image-wrapper">
+{% image "./src/images/blog/mahindra-fonts.png", "two versions of a font hierarchy using all caps in different headings" %} 
+</div>
 
 ## Celebrate small wins
 

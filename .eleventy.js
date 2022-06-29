@@ -62,13 +62,6 @@ module.exports = function (eleventyConfig) {
         return formatedDate
     });
 
-    eleventyConfig.addFilter('cssAttributeValue', function (text) {
-        let lowerCaseText = text.toLowerCase();
-        return lowerCaseText.replace(/\s/g, "-");
-    });
-
-
-
 
 
     //collections

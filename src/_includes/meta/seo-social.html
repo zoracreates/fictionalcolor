@@ -16,11 +16,12 @@
   {% set pageKeywords = metadata.keywords %}
 {% endif%}
 
+
   <title>{{ pageTitle }}</title>
 
   <meta name="description" content="{{ pageDescription }}">
   <meta name="author" content="{{ metadata.author.name }}"/>
-  <meta name="keywords" content="{{ pageKeywords }}"/>
+  <meta name="keywords" content="{% for word in  pageKeywords %}{%if loop.last%}{{ word }}{% else %}{{ word }}, {%endif%}{% endfor %}"/>
 
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="{{ pageTitle }}"/>

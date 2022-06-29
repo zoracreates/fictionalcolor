@@ -11,14 +11,14 @@
         <h3>Responsabilities</h3>
         <ul class="project-responsabilities">
             {% for responsability in projectOverview.responsabilities %}
-                <li><a href="#{{ responsability | cssAttributeValue }}">{{ responsability }}</a></li>
+                <li><a href="#{{ responsability | slugify  }}">{{ responsability }}</a></li>
             {% endfor %}
         </ul>
 
         <h3>Tools</h3>
         <ul class="project-tools">
             {% for tool  in projectOverview.tools %}
-           <li class="tool-{{  tool | cssAttributeValue }}">{{ tool }}</li>
+           <li class="tool-{{  tool | slugify  }}">{{ tool }}</li>
             {% endfor %}
         </ul>
 

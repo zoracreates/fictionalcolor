@@ -1,8 +1,7 @@
 ---
 title: Professional confidence - The unexpected benefit of journaling, and the expected benefit of a yellow blazer
-tags: professional confidence, career journal, journaling, career growth, professional development, professional growth, annual review
+tags:  [ "career development" ]
 date: 2020-08-10
-published: true
 description: How journaling can help with professional growth and confidence
 ---
 

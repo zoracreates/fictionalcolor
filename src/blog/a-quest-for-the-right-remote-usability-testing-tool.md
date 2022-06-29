@@ -1,17 +1,19 @@
 ---
 title: A quest for the right remote usability testing tool
-tags: remote UX, user research, remote work, quarantine, usability testing, UX, UXR, quantitative research, qualitative research
+tags: [ "UX Research", "UXR Tools", "usability testing" ]
 date: 2020-06-01
-published: true
 description: How to decide on a usability testing tool
 ---
+
 A few days before any of us knew about the new work-from-home-normal, I began researching a new usability testing tool for Harvard Web Publishing (HWP).  We had just acquired a new project that involved testing the usability of a new calendar for undergraduate students, and were considered doing a series of unmoderated usability tests, perhaps using a tool  like Loop 11. We’d been considering Loop 11 because it had a lower cost than most tools and was well known for being accessible.
 
 Two weeks or so before the project kicked-off, everyone was asked to work from home until further notice. My new task became even more  crucial. I was no longer testing one particular tool for a project, I was helping determine wether we had the right tools for remote usability testing for the weeks or months to come. 
 
 To meet this goal, I piloted several tools, and spoke with colleagues from different departments in Harvard, and over at MIT. Here’s what I learned.
 
-![laptop on desk](../../images/blog/silver-and-black-laptop.jpg)
+<div class="image-wrapper">
+{% image "./src/images/blog/silver-and-black-laptop.jpg", "laptop on desk" %}
+</div>
 
 ## Lessons from researching usability testing tools
 ### UXR needs and practices vary widely between organizations, not just fields
@@ -33,7 +35,9 @@ One key thing to remember is that unmoderated  remote usability testing means le
 ### Understanding how your audience may be skewed
 Unfortunately remote testing can mean a bigger learning curb for participants. One of the benefits of using participant recruiting pools provided by tools like Loop 11, UserTesting, and What Users Do is that participants within the pool have the appropriate hardware, software, and tool knowledge to smoothly participate in remote testing.  Before going for one of these tools, consider your audience’s comfort with and access to required technology.
 
-![screenshot of a usability test through Zoom](../../images/blog/localist.png)
+<div class="image-wrapper">
+{% image "./src/images/blog/localist.png", "screenshot of a usability test through Zoom" %}
+</div>
 
 ## What we did
 In the end, I did not  recommend my team to adopt Loop 11, What Users Do, or anything new.  After further speaking with the client who had hired us to research the new undergraduate student calendar, we uncovered that unmoderated testing was not the right approach for the project. And, in general, we did not really have a high demand for unmoderated usability testing. 

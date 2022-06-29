@@ -1,8 +1,7 @@
 ---
 title: Accessibility nudges for all content creators
-tags: accessibility, content creation, nudge, digital accessibility, design, digital design
+tags: [ "accessibility", "inclusive design" ]
 date: 2020-09-14
-published: true
 description: Why we should make it easy to create accessible content
 ---
 I’ve been thinking about accessibility a lot lately, and  in the past few months, more people seem to be thinking about it too. But I sometimes wonder if this is only within my small bubble of the tech sphere. 
