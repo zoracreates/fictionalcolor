@@ -1,46 +1,57 @@
-
 {% extends "layouts/base.html"%}
 {% set pageId = "post" %}
 {% set previousPost = collections.blog | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.blog | getNextCollectionItem(page) %}
-{% block content %} 
+{% block content %}
     <header>
         <div class="nav-wrapper">
             {% include "components/landmarks/nav.html" %}
         </div>
         <div class="wrapper-sm block-center">
-        <div class="breadcrumb-wrapper">
+            <div class="breadcrumb-wrapper">
 
-            <nav aria-label="breadcrumbs">
-                <ol class="nav-list">
-                    <li>
-                        <a href="/">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/blog">
-                            Blog
-                        </a>
-                    </li>
-                </ol>
-            </nav>
-        </div>
+                <nav aria-label="breadcrumbs">
+                    <ol class="nav-list">
+                        <li>
+                            <a href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/blog">
+                                Blog
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
 
-         <h1>{{ title }}</h1>
-        </div>
-    </header>
+            <h1>{{ title }}</h1>
 
-    <main>
+            <p class="u-small">
+                <span class="label">Posted:</span>
+                <time datetime="{{ date }}">
+                    {{ date | formatDate}}</time>
+            </p>
+        {% if tags %}
+            <p class="u-small"><span class="label">Tags:</span>                 
+            {% for tag in tags%}
+                <a class="tag" href="/blog/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
+            {% endfor%}
+            </p>
+        {% endif %}
+    </div>
+</header>
+
+<main>
     <div>
         <article class="wrapper-sm block-center">
+
             {{ content | safe }}
         </article>
     </div>
-    </main>
+</main>
 
-    {% include "components/posts/previous-next.html" %}
+{% include "components/posts/previous-next.html" %}
 
-   
-
-  {% endblock%}
+{% endblock%}

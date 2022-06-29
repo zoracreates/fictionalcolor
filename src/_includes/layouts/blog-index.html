@@ -2,8 +2,17 @@
 {% set postListItems = pagination.items %}
 
 {% block mainContent %}
+
+{% if tag %}
+  {% set postListItems = collections[tag] %}
+{% endif %}
+
     <main>
+
+{# If this is a tag, grab those items instead as one large collection #}
         <div class="wrapper-lg" >
+                <div class="breadcrumb-wrapper">
+        </div>
             <ul class="wrapper-md block-center post-list">
                 {% for item in postListItems %}
                     <li class="card">
@@ -17,6 +26,14 @@
                             <time datetime="{{ item.data.date }}">
                                 {{ item.data.date | formatDate  }}</time>
                         </p>
+                        <p class="u-small">
+                        <span class="label">Tags: </span> 
+                        {% if item.data.tags %}
+                        {% for tag in item.data.tags%}
+                        <a class="tag" href="/blog/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
+                         {% endfor%}
+                        {% endif %}
+                        </p>
                         <p>{{ item.data.description }}</p>
                     </li>
                 {% endfor %}
@@ -25,12 +42,13 @@
         </div>
     </main>
     {# Only renders this section if there are links to render #}
-    {% if pagination.href.next or pagination.href.previous %}
+    {% if not tag and (pagination.href.next or pagination.href.previous) %}
         <div class="wrapper-lg">
 
             <nav aria-label="Previos and Next Posts">
 
-                <p class="page-number">
+                <p class="page-number" aria-current="page" aria-live="polite">
+                <span class="sr-only">Blog feed </span>
                     Page
                     {{ pagination.pageNumber + 1 }}
                     of
@@ -53,7 +71,6 @@
                             </a>
                         </div>
                     {% endif %}
-
                 </div>
                 
             </nav>
