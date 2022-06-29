@@ -43,10 +43,7 @@
             <p class="u-small">
                 <span class="label">Published:</span>
                 <time datetime="{{ feature.date }}">{{ feature.date | formatDate }}</time>
-            </p>
-            <p class="u-small">
-                <span class="label">Publication:</span>
-                 <i>{{ feature.publication }}</i>
+                at <i>{{ feature.publication }}</i>
             </p>
             <p class="u-med">{{ feature.description }}</p>
 
