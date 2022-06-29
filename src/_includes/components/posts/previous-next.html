@@ -1,19 +1,19 @@
 {% if previousPost or nextPost %}
-    <nav>
+    <nav aria-label="Previos and Next Posts">
         <div class="wrapper-lg post-nav">
             {% if previousPost %}
                 <div>
-                    <a href="">
+                     <a href="{{ previousPost.url }}">
                         <span>Previous</span>
-                        <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
-                </a>
+                       {{ previousPost.data.title }}
+                    </a>
             </div>
             {% endif %}
             {% if nextPost %}
                 <div class="block-right">
-                    <a href="">
+                    <a href="{{ nextPost.url }}">
                         <span>Next</span>
-                        <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+                        {{ nextPost.data.title }}
                     </a>
                 </div>
             {% endif %}

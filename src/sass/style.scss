@@ -487,7 +487,7 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
   padding: 35px 0px;
 }
 
-.post-nav divnav div:last-child {
+.post-nav div, nav div:last-child {
   margin-bottom: 0;
 }
 
@@ -512,6 +512,7 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
   font-size: $h6-size;
 }
 
+
 .post-list .u-small {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -529,13 +530,28 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
   color: $text-color;
 }
 
+.post-nav > div {
+  margin-bottom: 10px;
+}
+
 .post-nav div span {
   text-transform: uppercase;
   display: block;
 }
 
+nav .page-number {
+  margin: 0px 0px 5px 0px;
+  padding-top: 35px;
+  font-weight: 700;
+}
+ 
+
 .post-nav {
   padding: 35px 0;
+}
+
+.page-number + .post-nav {
+  padding-top: 0px
 }
 
 ul.post-list {
@@ -939,6 +955,11 @@ blockquote span {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  nav .page-number {
+    text-align: center;
+    margin-bottom: -27px;
+   }
 
   .post-nav div {
     margin-bottom: 0;

@@ -2,26 +2,61 @@
 {% set postListItems = pagination.items %}
 
 {% block mainContent %}
-<main>
-    <div class="wrapper-lg">
-        <ul class="wrapper-md block-center post-list">
-             {% for item in postListItems %}
-            <li class="card">
-                <h2>
-                    <a href="{{ item.url }}">
-                       {{ item.data.title }}
-                    </a>
-                </h2>
-                <p class="u-small">
-                    <span class="label">Posted:</span>
-                    <time datetime="{{ item.data.date }}">
-                        {{ item.data.date | formatDate  }}</time>
-                </p>
-                <p>{{ item.data.description }}</p>
-            </li>
-            {% endfor %}
+    <main>
+        <div class="wrapper-lg" >
+            <ul class="wrapper-md block-center post-list">
+                {% for item in postListItems %}
+                    <li class="card">
+                        <h2>
+                            <a href="{{ item.url }}">
+                                {{ item.data.title }}
+                            </a>
+                        </h2>
+                        <p class="u-small">
+                            <span class="label">Posted:</span>
+                            <time datetime="{{ item.data.date }}">
+                                {{ item.data.date | formatDate  }}</time>
+                        </p>
+                        <p>{{ item.data.description }}</p>
+                    </li>
+                {% endfor %}
 
-        </ul>
-    </div>
-</main>
+            </ul>
+        </div>
+    </main>
+    {# Only renders this section if there are links to render #}
+    {% if pagination.href.next or pagination.href.previous %}
+        <div class="wrapper-lg">
+
+            <nav aria-label="Previos and Next Posts">
+
+                <p class="page-number">
+                    Page
+                    {{ pagination.pageNumber + 1 }}
+                    of
+                    {{ pagination.pages.length - 1 }}
+                </p>
+
+                <div class="post-nav">
+                    {% if pagination.href.previous %}
+                        <div>
+                            <a href="{{ pagination.href.previous }}">
+                                {{ paginationPrevText if paginationPrevText else 'Previous' }}
+                            </a>
+                        </div>
+                    {% endif %}
+
+                    {% if pagination.href.next %}
+                        <div  class="block-right">
+                            <a href="{{ pagination.href.next }}{{ paginationAnchor }}">
+                                {{ paginationNextText if paginationNextText else 'Next' }}
+                            </a>
+                        </div>
+                    {% endif %}
+
+                </div>
+                
+            </nav>
+        </div>
+    {% endif %}
 {% endblock %}
