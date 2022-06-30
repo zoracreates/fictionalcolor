@@ -1,0 +1,34 @@
+{
+    "features":  [
+        {
+            "title": "justify-yourself: space-between, with Katie Langerman",
+            "for": "Boston",
+            "dateLabel": "Delivered",
+            "date": "2019-10-04",
+            "url": "https://www.youtube.com/watch?v=AtYyOGmOZkc&feature=emb_title"
+        },
+        {
+            "title": "Ser UX Researcher en Harvard University",
+            "for": "Píldoras UX",
+            "dateLabel": "Premiered",
+            "date": "2021-01-06",
+            "titleLanguage": "es",
+            "forLanguage" : "es",
+            "url": "https://www.youtube.com/watch?v=ydAzSlfgKqo"
+        },
+        {
+            "title": "A Practical Introduction to Visual UI Design",
+            "for": "Girl Develop It",
+            "dateLabel": "Delivered",
+            "date": "2021-11-20",
+            "description" : "A visual design workshop that incorporates design theory"
+        }, {
+            "title": "Qualitative UX Research for beginners",
+            "for": "Inclusive Tech Hub",
+            "dateLabel": "Delivered",
+            "date": "2019-06-3",
+            "description" : "A workshop about UXR practices, focusing on interviews and qualtiative data analysis"
+        }
+    ]
+    
+}
