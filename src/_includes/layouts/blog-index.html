@@ -1,79 +1,95 @@
 {% extends "layouts/secondary-base.html" %}
 {% set postListItems = pagination.items %}
 
-{% block mainContent %}
+{% if title == "Blog" %}
+    {% set isBlogIndex = true%}
+    {% else%}
+    {% set isBlogIndex = false%}
+    {% endif%}
+    {% block mainContent %}
 
-{% if tag %}
-  {% set postListItems = collections[tag] %}
-{% endif %}
+        {% if tag %}
+            {% set postListItems = collections[tag] %}
+        {% endif %}
 
-    <main>
+        <main>
 
-{# If this is a tag, grab those items instead as one large collection #}
-        <div class="wrapper-lg" >
-                <div class="breadcrumb-wrapper">
-        </div>
-            <ul class="wrapper-md block-center post-list">
-                {% for item in postListItems %}
-                    <li class="card">
-                        <h2>
-                            <a href="{{ item.url }}">
-                                {{ item.data.title }}
-                            </a>
-                        </h2>
-                        <p class="u-small">
-                            <span class="label">Posted:</span>
-                            <time datetime="{{ item.data.date }}">
-                                {{ item.data.date | formatDate  }}</time>
-                        </p>
-                        <p class="u-small">
-                        <span class="label">Tags: </span> 
-                        {% if item.data.tags %}
-                        {% for tag in item.data.tags%}
-                        <a class="tag" href="/blog/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
-                         {% endfor%}
-                        {% endif %}
-                        </p>
-                        <p>{{ item.data.description }}</p>
-                    </li>
-                {% endfor %}
+            {# If this is a tag, grab those items instead as one large collection #}
+            <div class="wrapper-lg">
+                {% if tag %}
+                    <p>
+                        <a class="text-btn" href="/blog">Back to all posts</a>
+                    </p>
+                    {% endif%}
 
-            </ul>
-        </div>
-    </main>
-    {# Only renders this section if there are links to render #}
-    {% if not tag and (pagination.href.next or pagination.href.previous) %}
-        <div class="wrapper-lg">
+                    <ul class="wrapper-md block-center post-list">
+                        {% for item in postListItems %}
+                            <li class="card">
+                                <h2>
+                                    <a href="{{ item.url }}">
+                                        {{ item.data.title }}
+                                    </a>
+                                </h2>
+                                <p class="u-small">
+                                    <span class="label">Posted:</span>
+                                    <time datetime="{{ item.data.date }}">
+                                        {{ item.data.date | formatDate  }}</time>
+                                </p>
+                                <p class="u-small">
+                                    <span class="label">Tags:
+                                    </span>
+                                    {% if item.data.tags %}
+                                        {% for tag in item.data.tags%}
 
-            <nav aria-label="Previos and Next Posts">
+                                            {% if isBlogIndex%}
+                                                <a class="tag" href="tag/{{ tag| slugify }}/">#{{ tag | title | replace(' ', '') }}</a>
+                                            {% else %}
+                                                <a class="tag" href="../{{ tag | slugify }}/">#{{ tag | title | replace(' ', '') }}</a>
+                                            {%endif%}
+                                        {% endfor%}
+                                    {% endif %}
+                                        </p>
+                                        <p>{{ item.data.description }}</p>
+                                    </li>
+                                {% endfor %}
 
-                <p class="page-number" aria-current="page" aria-live="polite">
-                <span class="sr-only">Blog feed </span>
-                    Page
-                    {{ pagination.pageNumber + 1 }}
-                    of
-                    {{ pagination.pages.length - 1 }}
-                </p>
+                            </ul>
+                        </div>
+                    </main>
+                    {# Only renders this section if there are links to render #}
+                    {% if not tag and(pagination.href.next or pagination.href.previous) %}
+                        <div class="wrapper-lg">
 
-                <div class="post-nav">
-                    {% if pagination.href.previous %}
-                        <div>
-                            <a href="{{ pagination.href.previous }}">
-                                {{ paginationPrevText if paginationPrevText else 'Previous' }}
-                            </a>
+                            <nav aria-label="Previos and Next Posts">
+
+                                <p class="page-number" aria-current="page" aria-live="polite">
+                                    <span class="sr-only">Blog feed
+                                    </span>
+                                    Page
+                                    {{ pagination.pageNumber + 1 }}
+                                    of
+                                    {{ pagination.pages.length - 1 }}
+                                </p>
+
+                                <div class="post-nav">
+                                    {% if pagination.href.previous %}
+                                        <div>
+                                            <a href="{{ pagination.href.previous }}">
+                                                {{ paginationPrevText if paginationPrevText else 'Previous' }}
+                                            </a>
+                                        </div>
+                                    {% endif %}
+
+                                    {% if pagination.href.next %}
+                                        <div class="block-right">
+                                            <a href="{{ pagination.href.next }}{{ paginationAnchor }}">
+                                                {{ paginationNextText if paginationNextText else 'Next' }}
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+
+                            </nav>
                         </div>
                     {% endif %}
-
-                    {% if pagination.href.next %}
-                        <div  class="block-right">
-                            <a href="{{ pagination.href.next }}{{ paginationAnchor }}">
-                                {{ paginationNextText if paginationNextText else 'Next' }}
-                            </a>
-                        </div>
-                    {% endif %}
-                </div>
-                
-            </nav>
-        </div>
-    {% endif %}
-{% endblock %}
+                {% endblock %}

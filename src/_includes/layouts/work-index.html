@@ -1,45 +1,58 @@
 {% extends "layouts/secondary-base.html" %}
-{% set title = "Work" %}
-{% set description = "UX design and research case studies" %}
 
-{% block mainContent %}
-    <main>
-        <div class="wrapper-lg">
-            <ul class="post-list block-center">
-            {% for item in collections.work %}
-                <li class="card cols-40-60">
-                    <div class="col featured-image">
-                     {% image item.data.featuredImage, item.data.featuredImageAlt  %}   
-                    </div>
-                    <div class="col card-title">
-                        <h2>
-                            <a href="{{ item.url }}">
-                                {{ item.data.title }}
-                            </a>
-                        </h2>
-                        <p class="u-small">
-                            <span class="label">Project Type:</span>
-                            {% for category in item.data.categories %}
+{% if collectionName == "work" %}
+    {% set isWorkCollection = true%}
+{% else%}
+    {% set isWorkCollection = false%}
+{% endif%}
+    
+    {% block mainContent %}
+        <main>
+            <div class="wrapper-lg">
+                {% if not isWorkCollection %}
+                    <p>
+                        <a class="text-btn" href="/work">Back to all work</a>
+                    </p>
+                {% endif %}
 
-                             {% if loop.last %}
-                                {{ category }}
-                            {% else%}
-                                {{ category }},
-                            {% endif %}
+                    <ul class="post-list block-center">
+                        {% for item in collections[collectionName] %}
+                            <li class="card cols-40-60">
+                                <div class="col featured-image">
+                                    {% image item.data.featuredImage,
+                                    item.data.featuredImageAlt %}
+                                </div>
+                                <div class="col card-title">
+                                    <h2>
+                                        <a href="{{ item.url }}">
+                                            {{ item.data.title }}
+                                        </a>
+                                    </h2>
+                                    <p class="u-small">
+                                        <span class="label">Project Type:</span>
+                                        {% for cat in item.data.categories %}
+                                            {% if isWorkCollection%}
+                                              <a href="type/{{ cat | slugify }}-work/">{{ cat }}</a>
+                                            {% else %}
+                                                 <a href="../{{ cat | slugify }}-work/">{{ cat }}</a>
+                                                 {%endif%}
+                                            {% if not loop.last %}
+                                             |
+                                            {% endif %}
+                                            
+                                        {% endfor%}
 
-                            {% endfor%}
-                             
-                             </p>
-                    </div>
-                </li>
-            {% endfor %}
-            </ul>
-        </main>
+                                        </p>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </main>
 
-        <aside class="wrapper-lg">
-            <h2>Want learn more?</h2>
-            <p>If you want to see more of my work or talk about what I do, get in touch!</p>
-            <a class="btn" href="mailto:zmcabrera@gmail.com">Email Me</a>
-        </aside>
-    </div>
-{% endblock %}
+                    <aside class="wrapper-lg">
+                        <h2>Want learn more?</h2>
+                        <p>If you want to see more of my work or talk about what I do, get in touch!</p>
+                        <a class="btn" href="mailto:zmcabrera@gmail.com">Email Me</a>
+                    </aside>
+                </div>
+            {% endblock %}
