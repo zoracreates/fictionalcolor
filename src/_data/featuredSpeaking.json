@@ -5,7 +5,8 @@
             "for": "Boston",
             "dateLabel": "Delivered",
             "date": "2019-10-04",
-            "url": "https://www.youtube.com/watch?v=AtYyOGmOZkc&feature=emb_title"
+            "url": "https://www.youtube.com/watch?v=AtYyOGmOZkc&feature=emb_title",
+            "description" : "A talk about what it's like to be a UXer with multiple hats"
         },
         {
             "title": "Ser UX Researcher en Harvard University",
@@ -14,7 +15,8 @@
             "date": "2021-01-06",
             "titleLanguage": "es",
             "forLanguage" : "es",
-            "url": "https://www.youtube.com/watch?v=ydAzSlfgKqo"
+            "url": "https://www.youtube.com/watch?v=ydAzSlfgKqo",
+            "description" : "A Spanish interview about how I became a UX Researcher and what it means to do UX research at Harvard"
         },
         {
             "title": "A Practical Introduction to Visual UI Design",
