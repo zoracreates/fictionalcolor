@@ -2,9 +2,14 @@
     <div class="wrapper-lg">
         <p>© Zoraida Cabrera-Mieles 2022</p>
         <p>
-            <a href={`mailto:zmcabrera@gmail.com`}>zmcabrera@gmail.com</a>
+            <a href=mailto:{{metadata.author.email}}>{{metadata.author.email}}</a>
         </p>
-        <a href="/blog">Read Blog</a>
+        <p>
+            <a href="/blog">Read Blog</a>
+        </p>
+        <p>
+            <a href="/feed.xml">RSS</a>
+        </p>
 
         <ul class="social">
             {% for channel in socialChannels.channels %}

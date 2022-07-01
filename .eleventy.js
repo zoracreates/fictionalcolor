@@ -1,4 +1,5 @@
 const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
+const rssPlugin = require('@11ty/eleventy-plugin-rss');
 
 // Responsive images
 const Image = require('@11ty/eleventy-img');
@@ -37,6 +38,10 @@ async function imageShortcode(src, alt, sizes = '(min-width: 1024px) 100vw, 50vw
 module.exports = function (eleventyConfig) {
 
     eleventyConfig.addWatchTarget('./src/sass/');
+   
+   
+    // Plugins
+    eleventyConfig.addPlugin(rssPlugin);
 
     // // Set directories to pass through to the dist folder
     eleventyConfig.addPassthroughCopy('./src/images/social/');
