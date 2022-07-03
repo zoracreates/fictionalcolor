@@ -4,7 +4,7 @@ tags: [ "career development" ]
 date: 2022-06-03
 description: A reflection about switching jobs to grow my career
 ---
-Three years ago, I did a talk with my friend Katie Langerman about being a UX Generalist. At the time we used the word “hybrid” to mean wearing multiple hats at work. Oh how the times have changed in just two years.
+Three years ago, I did a talk with my friend Katie Langerman about being a UX Generalist. At the time we used the word “hybrid” to mean wearing multiple hats at work. Oh how the times have changed.
 
 In 2019 I had just started working full-time at Harvard, and my work involved anything from running usability studies, to leading design workshops, to wireframing, and even programming. And for a time, I loved my work, but I reached a point where something was missing.
 
