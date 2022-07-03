@@ -6,7 +6,7 @@ description: A reflection about switching jobs to grow my career
 ---
 Three years ago, I did a talk with my friend Katie Langerman about being a UX Generalist. At the time we used the word “hybrid” to mean wearing multiple hats at work. Oh how the times have changed.
 
-In 2019 I had just started working full-time at Harvard, and my work involved anything from running usability studies, to leading design workshops, to wireframing, and even programming. And for a time, I loved my work, but I reached a point where something was missing.
+In 2019 I had just started working full-time at Harvard, and my work involved anything from running usability studies, to leading design workshops, to wireframing, to visual design, and  even CSS. And for a time, I loved my work, but I reached a point where something was missing.
 
 Working at Harvard taught me a lot and made me into a mature UX professional. I learned to build relationships with stakeholders, and become stronger at both defending my design decisions, and taking feedback. I also found ways to democratize UX Research practices in my team. 
 
