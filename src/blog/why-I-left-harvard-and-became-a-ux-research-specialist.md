@@ -1,7 +1,7 @@
 ---
 title: Why I left Harvard and became a UX Research specialist
 tags: [ "career development" ]
-date: 2022-06-03
+date: 2022-07-03
 description: A reflection about switching jobs to grow my career
 ---
 Three years ago, I did a talk with my friend Katie Langerman about being a UX Generalist. At the time we used the word “hybrid” to mean wearing multiple hats at work. Oh how the times have changed.
