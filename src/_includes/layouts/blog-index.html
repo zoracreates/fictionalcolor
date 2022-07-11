@@ -10,7 +10,7 @@
 {% block mainContent %}
 
     {% if tag %}
-        {% set postListItems = collections[tag] %}
+        {% set postListItems = collections[tag] | reverse %}
     {% endif %}
 
     <main>
