@@ -2,7 +2,7 @@
 title: How to embrace learning during your first 6 months as a UX Designer/Researcher
 tags: [ "career development" ]
 date: 2020-03-29
-description: Lessons from my first 6 months working at Harvard
+description: Lessons from my first 6 months working at Harvard.
 ---
 
 On October 14, 2019, I started my first full-time UX  job, UX Designer/Researcher at Harvard Web Publishing, a team that offers UX research and design services to various departments within Harvard University. I had been an intern within that same team for almost a year, and had finally made it. Two years of studying and working multiple jobs to get experience finally felt worth it. 

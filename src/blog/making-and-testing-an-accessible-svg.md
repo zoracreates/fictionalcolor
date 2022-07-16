@@ -2,7 +2,7 @@
 title: Making and Testing an Accessible SVG
 tags: [ "accessibility", "design engineering" ]
 date: 2021-06-14
-description: Lessons learned from making an accessible clickable SVG
+description: Lessons learned from making an accessible clickable SVG.
 ---
 A few months ago, a client requested a clickable diagram for their website. Upon looking at the PNG image they sent, I realized the best way to make it accessible was to convert it into an SVG and add the links around each section of the diagram. Through the process of creating and testing this diagram, I learned a few new things about accessibility. Some of them were obvious, but others were a bit harder to uncover.
 

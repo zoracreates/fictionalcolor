@@ -2,7 +2,7 @@
 title: Addressing tech’s inclusive design debt
 tags: [ "inclusive design" ]
 date: 2020-07-09
-description: Thoughts on taking action towards more inclusive and ethical design
+description: Thoughts on taking action towards more inclusive and ethical design.
 ---
 Design and development involve hundreds of decisions, and anyone who’s worked in a complex project knows that it’s easy for things to fall through the cracks. Poor implementations are made due to lack of time, knowledge, or resources.  If efforts are not allocated properly to  solve the right problems, companies run the risk of creating vulnerable and difficult to maintain products. But weak products are not the only result of poor implementation and decision making.
 

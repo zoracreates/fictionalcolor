@@ -2,7 +2,7 @@
 title: A quest for the right remote usability testing tool
 tags: [ "UX research", "UXR tools", "usability testing" ]
 date: 2020-06-01
-description: How to decide on a usability testing tool
+description: How I decided on a usability testing tool for my work at Harvard.
 ---
 
 A few days before any of us knew about the new work-from-home-normal, I began researching a new usability testing tool for Harvard Web Publishing (HWP).  We had just acquired a new project that involved testing the usability of a new calendar for undergraduate students, and were considered doing a series of unmoderated usability tests, perhaps using a tool  like Loop 11. We’d been considering Loop 11 because it had a lower cost than most tools and was well known for being accessible.

@@ -2,7 +2,7 @@
 title: The Point of Models and Explaining your UX process
 tags: [ "UX design", "UX research", "design process" ]
 date: 2021-02-08
-description: Where UX process diagrams help and fail
+description: Where UX process diagrams help and fail.
 ---
 Explaining one’s UX process can prove very difficult. Most UX professionals can agree that the UX process is not linear. The process even struggles to follow the more complex, fancy, circular or diamond-like diagrams out there. While models can serve as jumping point to organize our thoughts, they seldom reflect reality. But beyond the problems with diagrams, another difficulty with explaining our process is that the question of process has two layers: 1) what is the project’s/product’s development process? 2) and how did you fit into the whole?
 

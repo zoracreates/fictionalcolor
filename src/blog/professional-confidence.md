@@ -2,7 +2,7 @@
 title: Professional confidence - The unexpected benefit of journaling, and the expected benefit of a yellow blazer
 tags:  [ "career development" ]
 date: 2020-08-10
-description: How journaling can help with professional growth and confidence
+description: How journaling can help with professional growth and confidence.
 ---
 
 On September 2018, I got a 8 hour/week internship at Harvard, that would one year later lead to full-time employment. At the time I had no idea it would land me a job , but I was excited for my first UX role and wanted record everything I learned. So I went to the store and bought a small gray spiral notebook, which I used every Tuesday and Thursday religiously during lunchtime. As I downed a sandwich so I could get to my next job, I hurriedly scribbled down a summary of my day.

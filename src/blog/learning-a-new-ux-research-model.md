@@ -2,7 +2,7 @@
 title: Learning a new UX Research model
 tags: [ "UX research" ]
 date: 2022-07-10
-description: Considering a research framework that aligns design and development language with research language
+description: Considering a research framework that aligns design and development language with research language.
 ---
 In the past, I’ve written about the [importance of models for explaining the UX process](https://www.zoracabrera.com/blog/the-point-of-models-and-explaining-your-ux-process/).  I explained that I approached [UX Research with the Service Design Model](https://www.nngroup.com/articles/ux-research-cheat-sheet/) in mind, to illustrate how research happens at different points of a product’s lifecycle and that at each point there are different methods for answering questions. This is all fine and good, but I’ve realized that explaining what “discovery”, “exploration”, and “listening” mean in the context of UXR can be challenging when you’re not talking to non-research professionals. Most people will get what “testing” means. The idea of putting an actual artifact in front of someone and figuring out if it works as expected, is pretty straight froward. Plus, most of us can associate the concept of asking and answering questions to testing. But there’s more to research than testing. How do you explain that to someone who has never done research?
 

@@ -2,7 +2,7 @@
 title: How to stay creative in times of uncertainty
 tags: [ "career development", "creative practice" ]
 date: 2020-04-20
-description: Thoughts after reading Austin Kleon's Keep Going
+description: Thoughts after reading Austin Kleon's Keep Going.
 ---
 Like many of us who for the past few weeks have been stuck at home self-quarantined, I’ve been followed by a sense of worrisome uncertainty mixed with boredom.  As I often do in times like this, I turn to wanting to create something, a drawing, a painting, a story, anything really.
 
