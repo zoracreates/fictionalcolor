@@ -26,13 +26,13 @@ Keeping my Gatsby website up-to-date was starting to feel like a big to-do. Ther
 
 ## The draw backs…
 Elevently is considered less “out-of-the-box” than Gatsby. Some would argue that this makes it more complicated to work with if you don’t know what you are doing. However, I would argue that because you have more flexibility to hand-pick what you need to start, Elevntly can be easier to manage when you have limited programming experience. If you find that the Eleventy docs are a little harder to get through, here’s a two resources that helped me build my site:
--- [Learn Eleventy From Scratch by Andy Bell](https://learneleventyfromscratch.com/#about-your-instructor)
-— [A Deep Dive Into Eleventy Static Site Generator by Stephanie Eckles on Smashing Magazine](https://www.smashingmagazine.com/2021/03/eleventy-static-site-generator/)
+- [Learn Eleventy From Scratch by Andy Bell](https://learneleventyfromscratch.com/#about-your-instructor)
+- [A Deep Dive Into Eleventy Static Site Generator by Stephanie Eckles on Smashing Magazine](https://www.smashingmagazine.com/2021/03/eleventy-static-site-generator/)
 
 Additionally, if helped me to looked at the GitHub Repos of some projects built on Eleventy, including:
-— [Stephanie Eckles Sass starter](https://github.com/5t3ph/11ty-sass-skeleton)
-— [The A11y Project](https://www.a11yproject.com/) 
-	— Repo: https://github.com/a11yproject/a11yproject.com
+- [Stephanie Eckles Sass starter](https://github.com/5t3ph/11ty-sass-skeleton)
+- [The A11y Project](https://www.a11yproject.com/) 
+	- Repo: https://github.com/a11yproject/a11yproject.com
 
 ## Conclusion
 I’m not saying everyone should stop using Gatsby and switch to Eleventy. There are different tools out there because people have different skill-sets and needs. The goal of this post is to provide additional perspective for someone trying to select their next static site generator or trying to build their own personal website. I decided to use Eleventy because it  better matches my skillset and needs. Find what works best for you.

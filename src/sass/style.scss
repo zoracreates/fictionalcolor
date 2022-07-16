@@ -480,18 +480,52 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
   margin-top: 0px;
 }
 
-.post-nav div a {
-  font-size: $h4-size;
-  font-weight: 900;
+.post-nav {
+  .post-nav-title,
+  .index-nav-title {
+    font-size: $h4-size;
+    font-weight: 900;
+  }
+
+  .post-nav-title {
+    max-width: 90%;
+  }
 }
 
-.post-nav div span {
+.block-right .post-nav-title {
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.post-nav div span.post-nav-label {
   @include bold-font;
+  font-size: $h6-size;
+  text-transform: uppercase;
+  display: block;
+  color: $black;
 }
 
 .post-nav div span {
-  font-size: $h6-size;
+  &.back-arrow,
+  &.forward-arrow {
+    @include black-font;
+    font-size: $h4-size;
+    width: auto;
+    color: $btn-color;
+    display: inline-block;
+  }
+
+  &.back-arrow {
+    padding-right: 0.5rem;
+
+  }
+
+  &.forward-arrow {
+    padding-left: 0.5rem;
+  }
 }
+
+
 
 
 .post-list .u-small {
@@ -506,8 +540,7 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
   margin-bottom: 0px;
 }
 
-.label,
-.post-nav div span {
+.label {
   color: $text-color;
 }
 
@@ -515,10 +548,6 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
   margin-bottom: 10px;
 }
 
-.post-nav div span {
-  text-transform: uppercase;
-  display: block;
-}
 
 nav .page-number {
   margin: 0px 0px 5px 0px;
@@ -939,6 +968,11 @@ blockquote span {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+
+    .post-nav-title {
+      display: flex;
+    }
+    
   }
 
   nav .page-number {

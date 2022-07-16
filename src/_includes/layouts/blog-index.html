@@ -73,14 +73,17 @@
                     Page
                     {{ pagination.pageNumber + 1 }}
                     of
-                    {{ pagination.pages.length - 1 }}
+                    {{ pagination.pages.length }}
                 </p>
 
                 <div class="post-nav">
                     {% if pagination.href.previous %}
                            <div>
                                 <a href="{{ pagination.href.previous }}">
+                                <span class="back-arrow">&#8592;</span>
+                                <span class="index-nav-title"> 
                                    {{ paginationPrevText if paginationPrevText else 'Previous' }}
+                                </span>
                                 </a>
                             </div>
                     {% endif %}
@@ -88,7 +91,10 @@
                    {% if pagination.href.next %}
                         <div class="block-right">
                             <a href="{{ pagination.href.next }}{{ paginationAnchor }}">
-                                {{ paginationNextText if paginationNextText else 'Next' }}
+                             <span class="index-nav-title"> 
+                                {{ paginationNextText if paginationNextText else 'Next'  }}
+                            </span>
+                                <span class="forward-arrow">&#8594;</span>
                             </a>
                         </div>
                     {% endif %}

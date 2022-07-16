@@ -2,18 +2,24 @@
     <nav aria-label="Previos and Next Posts">
         <div class="wrapper-lg post-nav">
             {% if previousPost %}
-                <div>
-                     <a href="{{ previousPost.url }}">
-                        <span>Previous</span>
-                       {{ previousPost.data.title }}
+                <div class="post-nav-title">
+                    <a href="{{ previousPost.url }}">
+                        <span class="post-nav-label">Previous</span>
+                        <span class="post-nav-title">
+                            <span class="back-arrow">&#8592;</span>
+                            {{ previousPost.data.title }}
+                        </span>
                     </a>
-            </div>
+                </div>
             {% endif %}
             {% if nextPost %}
-                <div class="block-right">
+                <div class="block-right post-nav-title">
                     <a href="{{ nextPost.url }}">
-                        <span>Next</span>
-                        {{ nextPost.data.title }}
+                        <span class="post-nav-label">Next</span>
+                        <span class="post-nav-title">
+                            {{ nextPost.data.title }}
+                            <span class="forward-arrow">&#8594;</span>
+                        </span>
                     </a>
                 </div>
             {% endif %}
