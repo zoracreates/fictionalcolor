@@ -32,7 +32,7 @@ Elevently is considered less “out-of-the-box” than Gatsby. Some would argue 
 Additionally, if helped me to looked at the GitHub Repos of some projects built on Eleventy, including:
 - [Stephanie Eckles Sass starter](https://github.com/5t3ph/11ty-sass-skeleton)
 - [The A11y Project](https://www.a11yproject.com/) 
-	- Repo: https://github.com/a11yproject/a11yproject.com
+	- [Repo](https://github.com/a11yproject/a11yproject.com)
 
 ## Conclusion
 I’m not saying everyone should stop using Gatsby and switch to Eleventy. There are different tools out there because people have different skill-sets and needs. The goal of this post is to provide additional perspective for someone trying to select their next static site generator or trying to build their own personal website. I decided to use Eleventy because it  better matches my skillset and needs. Find what works best for you.
