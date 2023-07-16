@@ -1,12 +1,6 @@
 {% extends "layouts/secondary-base.html" %}
 {% set postListItems = pagination.items %}
 
-{% if title == "Blog" %}
-    {% set isBlogIndex = true%}
-    {% else%}
-    {% set isBlogIndex = false%}
-    {% endif%}
-
 {% block mainContent %}
 
     {% if tag %}
@@ -43,11 +37,9 @@
                                 {% if item.data.tags %}
                                     {% for tag in item.data.tags%}
 
-                                        {% if isBlogIndex%}
+                            
                                             <a class="tag" href="tag/{{ tag| slugify }}/">#{{ tag | title | replace(' ', '') }}</a>
-                                        {% else %}
-                                            <a class="tag" href="../{{ tag | slugify }}/">#{{ tag | title | replace(' ', '') }}</a>
-                                        {%endif%}
+                             
                                     {% endfor%}
                                 {% endif %}
                         </p>
