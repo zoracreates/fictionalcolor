@@ -1,5 +1,5 @@
 ---
 title: About
-layout: layouts/base.html
+layout: layouts/secondary-base.html
 description: UX design and research case studies
 ---
