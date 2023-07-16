@@ -7,9 +7,10 @@
     <ul class="post-list cols-50-50">
         
     {# get the most recent post in the blog collection #}
-    {% for i in range(0, 1) %}
+    {% for i in range(0, 6) %}
      
-     {% set post = collections.blog[i] %}   
+     {% set post = collections.blog[i] %}  
+     {% if post %} 
 
         <li class="col card">
             <h4>
@@ -21,11 +22,21 @@
                 <span class="label">Posted:</span>
                 <time datetime="{{ post.data.date }}">{{ post.data.date | formatDate }}</time>
             </p>
+
+            {% if post.data.tags %}
+                <p class="u-small"><span class="label">Tags:</span>                 
+                {% for tag in post.data.tags%}
+                    <a class="tag" href="/blog/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
+                {% endfor%}
+                </p>
+            {% endif %}
+
             <p class="u-med">{{ post.data.description }}</p>
         </li>
+        {% endif %}
 
         {% endfor %}
     </ul>
 
-    <a class="text-btn" href="/blog">See All Blog Posts</a>
+    <a class="text-btn" href="/blog">See All Posts</a>
 </div>
