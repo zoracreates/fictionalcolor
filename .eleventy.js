@@ -1,4 +1,3 @@
-const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 
 // Responsive images
@@ -72,48 +71,10 @@ module.exports = function (eleventyConfig) {
 
 
     //collections
-    eleventyConfig.addCollection('work', collection => {
-        return sortByDisplayOrder(collection.getFilteredByGlob('./src/work/*.md'));
-    });
 
     // Returns a collection of blog posts in reverse date order
     eleventyConfig.addCollection('blog', collection => {
         return [...collection.getFilteredByGlob('./src/blog/*.md')].reverse();
-    });
-
-    eleventyConfig.addCollection('uxr', collection => {
-        return sortByDisplayOrder(
-            collection
-            .getFilteredByGlob('./src/work/*.md')
-            .filter((item) => item.data.categories.includes('UX Research')));
-    });
-
-    eleventyConfig.addCollection('uxd', collection => {
-        return sortByDisplayOrder(
-            collection
-            .getFilteredByGlob('./src/work/*.md')
-            .filter((item) => item.data.categories.includes('Experience Design')));
-    });
-
-    eleventyConfig.addCollection('vd', collection => {
-        return sortByDisplayOrder(
-            collection
-            .getFilteredByGlob('./src/work/*.md')
-            .filter((item) => item.data.categories.includes('Visual Design')));
-    });
-    
-    eleventyConfig.addCollection('de', collection => {
-        return sortByDisplayOrder(
-            collection
-            .getFilteredByGlob('./src/work/*.md')
-            .filter((item) => item.data.categories.includes('Design Engineering')));
-    });
-
-    eleventyConfig.addCollection('fe', collection => {
-        return sortByDisplayOrder(
-            collection
-            .getFilteredByGlob('./src/work/*.md')
-            .filter((item) => item.data.categories.includes('Front-End Development')));
     });
 
     return {
