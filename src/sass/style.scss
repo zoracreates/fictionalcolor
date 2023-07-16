@@ -247,10 +247,6 @@ p.u-small {
   border: 1px solid transparent;
 }
 
-.col.raised-card {
-  margin-bottom: 35px;
-}
-
 /* links and buttons*/
 a {
   color: $primary-color;
@@ -281,25 +277,6 @@ a.btn {
   border: none;
   text-transform: lowercase;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-}
-
-.hero-band a.btn,
-nav a.btn {
-  margin-top: 1rem;
-  border: 2px solid $background-color;
-  padding: 2px 10px 5px 10px;
-  border-radius: 7px;
-  transition: 0.4s ease-in;
-}
-
-.hero-band a.btn:hover,
-nav a.btn:hover {
-  background-color: $background-color;
-  color: $primary-color;
-}
-
-nav a.btn::after {
-  display: none;
 }
 
 a.btn:hover {
@@ -375,11 +352,6 @@ header nav a {
   font-size: $h2-size * 1.12;
 }
 
-.hero-band h2 {
-  color: $primary-color;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
 
 p.hero-text {
   line-height: 1.2;
@@ -577,66 +549,6 @@ ul.post-list {
   padding-right: 10px;
 }
 
-/* projects */
-.project h1 {
-  margin-top: 0px;
-}
-
-.project {
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ol,
-  ul,
-  blockquote {
-    width: 92%;
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  blockquote {
-    p {
-      width: 100%;
-    }
-  }
-
-  .project-overview-container {
-    ol,
-    ul {
-      padding-left: 0px;
-    }
-  }
-
-  blockquote {
-    padding-left: 45px;
-    margin-top: 1.45rem;
-  }
-
-  .gatsby-resp-image-wrapper {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-}
-
-.project-overview-container,
-.project-context-container,
-.project-main-container,
-.project-outcome-container {
-  padding: 45px 0px;
-}
-
-.project-overview-container {
-  background-color: $light-gray;
-
-  a {
-    color: $primary-color-dark;
-  }
-}
-
 .featured-image {
   max-width: 400px;
   margin: auto;
@@ -646,161 +558,6 @@ ul.post-list {
   margin: 0px;
 }
 
-.project {
-  h3,
-  h5,
-  h6 {
-    color: $secondary-black;
-  }
-
-  h4 {
-    font-weight: 700;
-    margin-top: 1rem;
-  }
-
-  p,
-  h4 {
-    margin-bottom: 0.5rem;
-  }
-}
-
-.project h3 {
-  margin-top: 1rem;
-}
-
-#post {
-  header ul,
-  .project-tools,
-  .project-responsabilities,
-  .grid-list {
-    padding-left: 0px;
-  }
-}
-
-.project-tools,
-.project-responsabilities,
-.grid-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0px;
-  max-width: 100%;
-
-  li {
-    flex-basis: 30%;
-  }
-}
-
-.grid-list {
-  grid-gap: 10px;
-}
-
-.project-tools,
-.project-responsabilities {
-  list-style: none;
-  grid-gap: 20px;
-}
-
-@supports (display: grid) {
-  .project-tools,
-  .project-responsabilities,
-  .grid-list {
-    display: grid;
-  }
-
-  .project-tools {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    font-size: $h6-size;
-    font-weight: bold;
-  }
-
-  .project-responsabilities,
-  .grid-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 500px) {
-  @supports (display: grid) {
-    .project-tools {
-      font-size: $h6-size;
-      font-weight: bold;
-    }
-
-    .project-tools,
-    .project-responsabilities,
-    .grid-list {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-}
-
-.project-tools li {
-  text-align: center;
-  max-width: 90px;
-  line-height: 1.2;
-  &::before {
-    content: "";
-    margin: auto;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 7px;
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-
-.tool-css::before {
-  background-image: url(../../images/work/tools/css.png);
-}
-
-.tool-optimal-workshop::before {
-  background-image: url(../../images/work/tools/optimalworkshop.png);
-}
-
-.tool-javascript::before {
-  background-image: url(../../images/work/tools/javascript.png);
-}
-
-.tool-openscholar::before {
-  background-image: url(../../images/work/tools/openscholar.png);
-}
-
-.tool-invision::before {
-  background-image: url(../../images/work/tools/invision.png);
-}
-
-.tool-sketch::before {
-  background-image: url(../../images/work/tools/sketch.png);
-}
-
-.tool-figma::before {
-  background-image: url(../../images/work/tools/figma.png);
-}
-
-.tool-github::before {
-  background-image: url(../../images/work/tools/github.png);
-}
-
-.tool-wordpress::before {
-  background-image: url(../../images/work/tools/wordpress.png);
-}
-
-.tool-qualtrics::before {
-  background-image: url(../../images/work/tools/qualtrics.png);
-}
-
-.tool-miro::before {
-  background-image: url(../../images/work/tools/miro.png);
-}
-
-.tool-google-sheets::before {
-  background-image: url(../../images/work/tools/google-sheets.png);
-}
-
-.tool-zoom::before {
-  background-image: url(../../images/work/tools/zoom.png);
-}
 
 /* home */
 .video-container,
