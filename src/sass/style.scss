@@ -250,12 +250,6 @@ p.u-small {
   margin-bottom: 0px;
 }
 
-.card {
-  position: relative;
-  border-radius: 7px;
-  transition-duration: 0.5s;
-  border: 1px solid transparent;
-}
 
 /* links and buttons*/
 a {
@@ -282,7 +276,7 @@ a.btn {
   padding: 7px 25px 10px 25px;
   width: fit-content;
   background-color: $btn-color;
-  transition: 0.4s ease-in;
+  transition: background-color 0.4s ease-in;
   border-radius: 7px;
   border: none;
   text-transform: lowercase;
