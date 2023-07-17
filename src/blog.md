@@ -1,7 +1,7 @@
 ---
 title: Blog Archive
 layout: layouts/blog-index.html
-description: Writings about a UX, a career in tech, and inclusive research and design.
+description: A blog about infrared photography
 pagination:
   data: collections.blog
   size: 15

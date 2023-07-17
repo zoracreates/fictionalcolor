@@ -1,0 +1,16 @@
+{% extends "layouts/secondary-base.html" %}
+{% set pageId = "about" %}
+
+{% block mainContent %}
+    <main>
+        <div class="wrapper-lg cols-1fr-2fr">
+            <div class="col">
+                <p>[IMAGE GOES HERE]</p>
+            </div>
+            <div class="col">
+                  {{ content | safe }}
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

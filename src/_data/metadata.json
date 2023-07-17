@@ -1,13 +1,13 @@
 {
-    "title": "Zoraida Cabrera-Mieles - UX Designer &amp; Researcher",
-    "description": "UX Designer/Researcher, Writer, Speaker, Educator",
-    "url": "https://www.zoracabrera.com/",
+    "title": "Fictional Color Blog",
+    "description": "A blog about infrared photography",
+    "url": "https://www.fictionalcolor.xom",
     "logo": "static/site-icons-favicon-32x32.png",
     "author": {
       "name": "Zoraida Cabrera-Mieles",
       "email": "zoracabrera@gmail.com"
     },
-    "keywords": ["Zoraida Cabrera-Mieles", "UX", "Design", "Research", "Boston", "Puerto Rico"], 
+    "keywords": ["Photography", "Infrared", "Kolari pocket"], 
     "social": {
       "twitter": "zoracreates"
     },

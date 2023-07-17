@@ -672,37 +672,58 @@ blockquote span {
   line-height: 1.2;
 }
 
+#about {
+  main h2:first-of-type {
+    margin-top: 0px;
+  }
+}
+
 /* Gird classes */
-.cols-50-50 > .col {
+.cols-1fr-1fr > .col {
   margin-bottom: 35px;
 }
 
 @media (min-width: 768px) {
 
-  .cols-80-20 {
+  .cols-1fr-2fr,
+  .cols-3fr-1fr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .cols-80-20 > .col:first-child {
-    flex-basis: 73%;
+  .cols-1fr-2fr > .col {
+    flex-basis: 67%;
+  }
+  .cols-1fr-2fr > .col:first-child {
+    flex-basis: 25%;
+  }
+  .cols-3fr-1fr > .col:first-child {
+    flex-basis: 67%;
   }
 
-  .cols-80-20 > h2.col:first-child {
+  .cols-1fr-2fr > .col:first-child,
+  .cols-3fr-1fr > h2.col:first-child {
     margin-top: 0px;
   }
 
-  .cols-80-20 > .col {
+  .cols-3fr-1fr > .col {
     flex-basis: 25%;
   }
 
   @supports (display: grid) {
-
-    .cols-80-20 {
+    .cols-1fr-2fr,
+    .cols-3fr-1fr {
       display: grid;
-      grid-template-columns: 4fr 1fr;
       grid-gap: 0px 35px;
+    }
+
+    .cols-3fr-1fr {
+      grid-template-columns: 3fr 1fr;
+    }
+
+    .cols-1fr-2fr {
+      grid-template-columns: 1fr 2fr;
     }
   }
 }
@@ -726,13 +747,13 @@ blockquote span {
     font-size: $p-size * 1.5;
   }
 
-  .cols-50-50 {
+  .cols-1fr-1fr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .cols-50-50 > .col {
+  .cols-1fr-1fr > .col {
     flex-basis: 48.5%;
     margin-bottom: 35px;
   }
@@ -772,12 +793,12 @@ blockquote span {
 
 
   @supports (display: grid) {
-    .cols-50-50 {
+    .cols-1fr-1fr {
       display: grid;
       grid-gap: 0px 70px;
     }
 
-    .cols-50-50 {
+    .cols-1fr-1fr {
       grid-template-columns: repeat(2, 1fr);
     }
 

@@ -1,7 +1,7 @@
 {
-  "name": "zoracabrera.com",
+  "name": "fictionalcolor.com",
   "version": "2.0.0",
-  "description": "UX Designer/Researcher, Writer, Speaker, Educator",
+  "description": "A blog about infrared photography",
   "main": ".eleventy.js",
   "scripts": {
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
@@ -14,15 +14,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "Zoraida",
-    "Cabrera",
-    "Mieles",
-    "Cabrera-Mieles",
-    "UX",
-    "Design",
-    "Research",
-    "Boston",
-    "Puerto Rico"
+    "photography",
+    "Infrared",
+    "Kolari pocket"
   ],
   "author": "zoracreates",
   "license": "ISC",
