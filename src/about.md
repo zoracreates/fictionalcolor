@@ -18,6 +18,6 @@ I keep my gear simple. I don't do this professionally, and this works for me.
 - IR Camera: Kolari Pocket (just ordered it, and it's on its way!)
 - Tripod: Manfrotto Compact Action
 
-The first IR camera I used was a rented full-spectrum Canon M50 Mark II. I don't currently own this camera.
+[The first IR camera I used](/blog/starting-with-infrared-photography) was a rented full-spectrum Canon M50 Mark II. I don't currently own this camera.
 
 
