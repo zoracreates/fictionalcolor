@@ -1,15 +1,15 @@
 {
     "title": "Fictional Color Blog",
-    "description": "A blog about infrared photography",
-    "url": "https://www.fictionalcolor.xom",
+    "description": "A blog about infrared and lanscape photography",
+    "url": "https://www.fictionalcolor.com",
     "logo": "static/site-icons-favicon-32x32.png",
     "author": {
       "name": "Zoraida Cabrera-Mieles",
       "email": "zoracabrera@gmail.com"
     },
-    "keywords": ["Photography", "Infrared", "Kolari pocket"], 
+    "keywords": ["Photography", "Infrared", "Landscape", "Kolari pocket", "Canon", "DSLR","Camera"], 
     "social": {
-      "twitter": "zoracreates"
+      "twitter": "fictionalcolor"
     },
     "themeCoLOR": "#d72f3e"
 }

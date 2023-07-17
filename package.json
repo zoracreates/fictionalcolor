@@ -1,7 +1,7 @@
 {
   "name": "fictionalcolor.com",
   "version": "2.0.0",
-  "description": "A blog about infrared photography",
+  "description": "A blog about infrared and lanscape photography",
   "main": ".eleventy.js",
   "scripts": {
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
@@ -16,7 +16,11 @@
   "keywords": [
     "photography",
     "Infrared",
-    "Kolari pocket"
+    "Kolari pocket",
+    "Canon",
+    "DSLR",
+    "Camera",
+    "Landscape"
   ],
   "author": "zoracreates",
   "license": "ISC",
