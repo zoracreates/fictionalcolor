@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Blog Archive
 layout: layouts/blog-index.html
 description: Writings about a UX, a career in tech, and inclusive research and design.
 pagination:

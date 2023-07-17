@@ -112,6 +112,16 @@ main {
   padding-bottom: 70px;
 }
 
+.tags-menu {
+  background-color: $light-gray;
+  height: fit-content;
+  padding-top: .5em;
+  border: $border-black 1px solid;
+  ul li {
+    list-style: none;
+  }
+}
+
 footer .wrapper-lg {
   border-top: $divider-color 1px solid;
 }
@@ -205,6 +215,7 @@ ul.social span,
   font-size: $h5-size;
   padding-bottom: 10px;
   margin-bottom: 0.5rem;
+  margin-top: 0px;
   @include bold-font;
 }
 
@@ -241,7 +252,6 @@ p.u-small {
 
 .card {
   position: relative;
-  padding: 10px;
   border-radius: 7px;
   transition-duration: 0.5s;
   border: 1px solid transparent;
@@ -346,7 +356,12 @@ header nav a {
   font-style: normal;
 }
 
-.hero-band h1 {
+.hero-band .h1-font {
+  @extend h1;
+}
+
+.hero-band h1,
+.hero-band .h1-font {
   margin-bottom: 10px;
   line-height: 1;
   font-size: $h2-size * 1.12;
@@ -663,28 +678,30 @@ blockquote span {
 }
 
 @media (min-width: 768px) {
-  .cols-20-80 {
+
+  .cols-80-20 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .cols-20-80 > .col:first-child {
-    flex-basis: 17%;
+  .cols-80-20 > .col:first-child {
+    flex-basis: 73%;
   }
 
-  .cols-20-80 > h2.col:first-child {
+  .cols-80-20 > h2.col:first-child {
     margin-top: 0px;
   }
 
-  .cols-20-80 > .col {
-    flex-basis: 80%;
+  .cols-80-20 > .col {
+    flex-basis: 25%;
   }
 
   @supports (display: grid) {
-    .cols-20-80 {
+
+    .cols-80-20 {
       display: grid;
-      grid-template-columns: 1fr 5fr;
+      grid-template-columns: 4fr 1fr;
       grid-gap: 0px 35px;
     }
   }
@@ -752,23 +769,7 @@ blockquote span {
     max-width: 600px;
   }
 
-  .col-40-60 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 
-  .cols-40-60 > .col:first-child {
-    flex-basis: 37%;
-  }
-
-  .cols-40-60 > h2.col:first-child {
-    margin-top: 0px;
-  }
-
-  .cols-40-60 > .col {
-    flex-basis: 60%;
-  }
 
   @supports (display: grid) {
     .cols-50-50 {
@@ -780,10 +781,5 @@ blockquote span {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .cols-40-60 {
-      display: grid;
-      grid-template-columns: 2fr 3fr;
-      grid-gap: 0px 35px;
-    }
   }
 }

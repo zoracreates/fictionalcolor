@@ -1,9 +1,6 @@
 
-<h2 class="col">Read Some Thoughts</h2>
+
 <div class="col">
-
-    <h3 class="u-header">Recent Posts</h3>
-
     <ul class="post-list cols-50-50">
         
     {# get the most recent post in the blog collection #}
@@ -38,5 +35,14 @@
         {% endfor %}
     </ul>
 
-    <a class="text-btn" href="/blog">See All Posts</a>
+
+    {% if collections.blog[6]%}
+        <a class="text-btn" href="/blog">See All Posts</a>
+    {% endif %}
 </div>
+<aside class="col tags-menu">
+    <h2 class="u-header">Browse by Topic</h2>
+    <ul>
+    <li><a href="/blog/tag/infrared-photography/">Infrared Photography</a></li>
+    </ul>
+</aside>
