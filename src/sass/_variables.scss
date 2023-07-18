@@ -1,36 +1,39 @@
-
-
-
 @mixin regular-font {
-    font-family: lavigne-text, sans-serif;
+    font-family: "tablet-gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 @mixin bold-font {
-    font-family: lavigne-text, sans-serif;
+    font-family: "tablet-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
 @mixin regular-italic-font {
-    font-family: lavigne-text, sans-serif;
+    font-family: "tablet-gothic", sans-serif;
     font-weight: 400;
     font-style: italic;
 }
 
 @mixin bold-italic-font {
-    font-family: lavigne-text, sans-serif;
+    font-family: "tablet-gothic", sans-serif;
     font-weight: 700;
     font-style: italic;
 }
 
+////
 
-// Skolar Sans Latin Black Italic
-@mixin black-italic-font {
-    font-family: skolar-sans-latin, sans-serif; 
-    font-weight: 900;
-    font-style: italic;
+@mixin bold-display-font {
+    font-family: "kade", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin regular-display-font {
+    font-family: "kade", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 
