@@ -5,7 +5,7 @@ description: About the author Zoraida Cabrera-Mieles
 ---
 
 ## Hi, I'm Zoraida!
-In 2018 I finally bought my first DSLR camera. I started experimenting with post-processing and different types of photography, unsure of what interested me the most, but mainly going back to landscapes every time. Then I took an infrared (IR) photography workshop, and I was instantly hooked. Photography is a creative outlet for me, allowing me to observe the world in different ways. And IR offered me a whole unseen world. 
+In 2018 I finally bought my first DSLR camera. I started experimenting with post-processing and different types of photography, unsure of what interested me the most, but mainly going back to landscape every time. Then I took an infrared (IR) photography workshop, and I was instantly hooked. Photography is a creative outlet for me, allowing me to observe the world in different ways. And IR offered me a whole unseen world.
 
 I became even more hooked when I started digging into it. I'm a bit of a techy. [I work as a UX Researcher](https://www.zoracabrera.com/) and occasionally like to code. With IR, you don't have to get technical if you don't want (and coding makes no part of it). However, understanding its ins and outs opens up many possibilities. You can say the same about other types of photography, but for me, it's been particularly true regarding IR.
 
