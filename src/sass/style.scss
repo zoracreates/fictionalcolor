@@ -241,7 +241,7 @@ ul.social span,
 p.u-small {
   margin-bottom: 0px;
   &:last-child {
-    margin-bottom: 1.45rem;
+    padding-bottom: 1.45rem;
   }
 }
 /* cards and blocks appearence */
@@ -389,7 +389,7 @@ p.hero-text {
 #post header {
   padding: 0px;
   margin-bottom: 0px;
-  background-color: transparent;
+
 }
 
 #post main {
@@ -405,6 +405,13 @@ nav.wrapper-lg {
 #post .nav-wrapper {
   padding: 35px 0px;
   background-color: $primary-color;
+}
+
+#post article{
+  padding-bottom: 1.45rem;
+    p:last-child {
+      margin-bottom: 0px;
+  }
 }
 
  nav[aria-label="breadcrumbs"] {
