@@ -22,8 +22,6 @@
     font-style: italic;
 }
 
-////
-
 @mixin bold-display-font {
     font-family: "kade", sans-serif;
     font-weight: 700;
@@ -37,19 +35,29 @@
 }
 
 
-$black: #33475B;
-$primary-color: #D72F3E;
-$secondary-color: #FFE23D;
-$white: #fff;
-$light-gray: #F2F2F2;
-$border-black: #ddd;
+@mixin banner-background($image, $height) {
+    background-image: radial-gradient(at right bottom, rgba(15,16,48,0), rgba(15,16,48,.8), rgba(15,16,48,1)), url($image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $primary-color-dark;
+    min-height: $height;
+}
 
 
-$background-color: $white; 
-$text-color: $black; 
-$divider-color: $black; 
-$btn-color: $primary-color;
+$primary-color: #10102B;
+$secondary-color: #FFA355;
+$black: darken($primary-color, 10%);
+$white: #FCFCFD;
+
+
+
+$background-color: $primary-color;
+$text-color: $white; 
+$divider-color: $white; 
+$btn-color: $white;
 $btn-text: $white;
+$link-color: $secondary-color;
 $secondary-black: lighten($black, 15%);
 $primary-color-dark: darken($primary-color, 5%);
 

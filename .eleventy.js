@@ -3,7 +3,9 @@ const rssPlugin = require('@11ty/eleventy-plugin-rss');
 // Responsive images
 const Image = require('@11ty/eleventy-img');
 const path = require("path");
+
 async function imageShortcode(src, alt, sizes = '(min-width: 1024px) 100vw, 50vw') {
+
     let metadata = await Image(src, {
         widths: [600, 900, 1500],
         formats: [null],
@@ -46,10 +48,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('./src/images/social/');
     eleventyConfig.addPassthroughCopy('./src/images/work/tools');
     eleventyConfig.addPassthroughCopy('./src/static/icons/');
+    eleventyConfig.addPassthroughCopy('./src/images/background');
     eleventyConfig.addPassthroughCopy('./src/manifest.json');
-
-
-
 
     //image shortcode
     eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);

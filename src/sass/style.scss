@@ -3,7 +3,7 @@
 
 /* general styles */
 html {
-  background-color: $background-color;
+  background-color: $primary-color-dark;
   color: $text-color;
   scroll-behavior: smooth;
 }
@@ -40,12 +40,6 @@ h2 code {
 
 img {
   height: auto;
-}
-
-.background-img-band {
-  margin: auto;
-  max-width: 2000px;
-  width: 100%;
 }
 
 .wrapper-xlg {
@@ -89,6 +83,7 @@ header {
   background-color: $primary-color;
 }
 
+
 nav {
   width: 100%;
   padding-bottom: 10px;
@@ -104,6 +99,7 @@ header nav a {
 
 main {
   padding-top: 70px;
+  background-color: $primary-color;
 }
 
 .band {
@@ -112,10 +108,9 @@ main {
 }
 
 .tags-menu {
-  background-color: $light-gray;
+  background-color: $primary-color-dark;
   height: fit-content;
   padding-top: .5em;
-  border: $border-black 1px solid;
   ul li {
     list-style: none;
   }
@@ -174,6 +169,7 @@ footer ul li {
 }
 
 footer {
+  background-color: $primary-color-dark;
   padding-top: 35px;
 }
 
@@ -263,13 +259,13 @@ p.u-small {
 
 /* links and buttons*/
 a {
-  color: $primary-color;
+  color: $link-color;
   font-weight: bold;
   text-decoration: underline;
 }
 
 footer a {
-  color: $primary-color;
+  color: $link-color;
 }
 
 a.text-btn,
@@ -302,7 +298,7 @@ a.btn:hover {
 a.text-btn {
   position: relative;
   text-decoration: none;
-  color: $primary-color;
+  color: $text-color;
   margin-bottom: 35px;
   font-size: $h5-size;
   border: none;
@@ -319,7 +315,7 @@ nav li a::after {
   display: block;
   width: 0;
   height: 3px;
-  background: $text-color;
+  background: $link-color;
   border-radius: 5px;
   transition-duration: 0.5s;
 }
@@ -339,11 +335,10 @@ a.text-btn:hover::after {
   animation: swipeBorder 1s infinite alternate;
 }
 
-/* hero and */
+/* hero band */
 
 .hero-band {
   padding-top: 10px;
-  color: $background-color;
   margin-bottom: 15px;
 }
 
@@ -359,6 +354,9 @@ header nav a {
   @include bold-display-font;
   font-size: $h3-size;
   text-transform: none;
+  background: -webkit-linear-gradient(150deg, $secondary-color, #EE4F4F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .tagline {
@@ -401,7 +399,7 @@ p.hero-text {
 nav.wrapper-lg {
   margin-bottom: 0px;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
 }
 
 #post .nav-wrapper {
@@ -414,6 +412,7 @@ nav.wrapper-lg {
   border-bottom: 0px;
   padding-top: 35px; 
   padding-bottom: 20px;
+
   
 
 
@@ -423,14 +422,16 @@ nav.wrapper-lg {
     &::after {
       content: '/';
       font-size: .8em;
+      color: $text-color;
     }
 
     a {
-      color: $primary-color;
+      color: $link-color;
       font-weight: 700;
+      font-size: $h6-size;
       &::after {
         height: 2px;
-        background-color: $black;
+        background-color: $link-color;
       }
     }
 
@@ -443,14 +444,7 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
   padding: 0px;
 }
 
-nav[aria-label="breadcrumbs"] li:after {
-  content: "/";
-  font-size: 0.8em;
-  color: $black;
-}
-
 #post h1 {
-  color: $black;
   margin-top: 0px;
 }
 
@@ -511,7 +505,7 @@ nav[aria-label="breadcrumbs"] li:after {
   font-size: $h6-size;
   text-transform: uppercase;
   display: block;
-  color: $black;
+  color: $text-color;
 }
 
 .post-nav div span {
@@ -520,7 +514,7 @@ nav[aria-label="breadcrumbs"] li:after {
     @include bold-font;
     font-size: $h4-size;
     width: auto;
-    color: $btn-color;
+    color: $link-color;
     display: inline-block;
   }
 
@@ -579,11 +573,19 @@ ul.post-list {
 
 .post-list li {
   list-style: none;
-  margin-bottom: 35px;
+  padding-bottom: 35px;
+  margin-bottom: 0px;
 }
 
 .tag {
   padding-right: 10px;
+}
+
+a.tag {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .featured-image {
@@ -662,6 +664,34 @@ ul.post-list {
 #home .u-header ~ a.text-btn {
   margin-left: 7px;
   transform: translateY(-20px);
+}
+
+#home .hero-band .wrapper-lg {
+  display: flex;
+  align-items: flex-end;
+  height: 200px;
+}
+
+#home header {
+  @include banner-background("/images/background/flower-375.jpg", 205px);
+}
+
+@media (min-width: 768px) { 
+  #home header {
+    @include banner-background("/images/background/flower-768.jpg", 215px);
+  }
+}
+
+@media (min-width: 1024px) { 
+  #home header {
+    @include banner-background("/images/background/flower-1024.jpg", 250px);
+  }
+}
+
+@media (min-width: 1440px) { 
+  #home header {
+    @include banner-background("/images/background/flower-1440.jpg", 350px);
+  }
 }
 
 /* blockquote */
