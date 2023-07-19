@@ -673,19 +673,31 @@ a.tag {
   transform: translateY(-20px);
 }
 
+#home header h1,
+#home header .h1-font {
+  margin-bottom: 0px;
+}
+
+#home .hero-band  {
+  margin-bottom: 0px;
+}
+
 #home .hero-band .wrapper-lg {
   display: flex;
   align-items: flex-end;
-  height: 200px;
+  height: 75px;
 }
 
 #home header {
-  @include banner-background("/images/background/flower-375.jpg", 205px);
+  @include banner-background("/images/background/flower-375.jpg", 105px);
 }
 
 @media (min-width: 768px) { 
   #home header {
-    @include banner-background("/images/background/flower-768.jpg", 215px);
+    @include banner-background("/images/background/flower-768.jpg", 115px);
+  }
+  #home .hero-band .wrapper-lg {
+    height: 100px;
   }
 }
 
@@ -698,6 +710,9 @@ a.tag {
 @media (min-width: 1440px) { 
   #home header {
     @include banner-background("/images/background/flower-1440.jpg", 350px);
+  }
+  #home .hero-band .wrapper-lg {
+    height: 200px;
   }
 }
 
