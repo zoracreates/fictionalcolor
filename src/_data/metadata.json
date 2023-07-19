@@ -1,5 +1,5 @@
 {
-    "title": "Fictional Color Blog",
+    "title": "Fictional Color",
     "description": "A blog about infrared and lanscape photography",
     "url": "https://www.fictionalcolor.com",
     "logo": "static/site-icons-favicon-32x32.png",
@@ -11,5 +11,5 @@
     "social": {
       "twitter": "fictionalcolor"
     },
-    "themeCoLOR": "#d72f3e"
+    "themeCoLOR": "#11122D"
 }
