@@ -1,24 +1,14 @@
 {
     "channels": [
       {
-        "name": "GitHub",
-        "iconSrc" : "/images/social/github.png",
-        "url": "https://github.com/zoracreates"
+        "name": "Instagram",
+        "iconSrc" : "/images/social/instagram.png",
+        "url": "https://www.instagram.com/fictionalcolor/"
       },
       {
-        "name": "Twitter",
-        "iconSrc" : "/images/social/twitter.png",
-        "url": "https://twitter.com/zoracreates/"
-      },
-      {
-        "name": "LinkedIn",
-        "iconSrc" : "/images/social/linkedin.png",
-        "url": "https://www.linkedin.com/in/zoracabrera/"
-      },
-      {
-        "name": "Medium",
-        "iconSrc" : "/images/social/medium.png",
-        "url": "https://zoracabrera.medium.com/"
+        "name": "Pinterest",
+        "iconSrc" : "/images/social/pinterest.png",
+        "url": "https://www.pinterest.com/fictionalcolor/"
       }
     ]
-  }
+}
