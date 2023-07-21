@@ -356,6 +356,7 @@ header nav a {
   text-transform: none;
   background: -webkit-linear-gradient(150deg, $secondary-color, #EE4F4F);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
