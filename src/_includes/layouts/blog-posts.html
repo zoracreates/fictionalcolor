@@ -3,56 +3,29 @@
 {% set blogCollection = collections.blog | reverse %}
 {% set previousPost = blogCollection | getPreviousCollectionItem(page) %}
 {% set nextPost = blogCollection | getNextCollectionItem(page) %}
+
 {% block content %}
-    <header>
-        <div class="nav-wrapper">
-            {% include "components/landmarks/nav.html" %}
-        </div>
-        <div class="wrapper-sm block-center">
-            <div class="breadcrumb-wrapper">
 
-                <nav aria-label="breadcrumbs">
-                    <ol class="nav-list">
-                        <li>
-                            <a href="/">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/blog">
-                                Blog
-                            </a>
-                        </li>
-                    </ol>
-                </nav>
-            </div>
+    {% include "components/posts/post-header.html" %}
 
-            <h1>{{ title }}</h1>
-
-            <p class="u-small">
-                <span class="label">Posted:</span>
-                <time datetime="{{ date }}">
-                    {{ date | formatDate}}</time>
-            </p>
-        {% if tags %}
-            <p class="u-small"><span class="label">Tags:</span>                 
-            {% for tag in tags%}
-                <a class="tag" href="/blog/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
-            {% endfor%}
-            </p>
-        {% endif %}
-    </div>
-</header>
-
-<main>
-    {# <div> #}
+    <main>
         <article>
 
             {{ content | safe }}
         </article>
-    {# </div> #}
-</main>
+    </main>
 
-{% include "components/posts/previous-next.html" %}
+    {% include "components/posts/previous-next.html" %}
 
-{% endblock%}
+    <script>
+
+        const preventRightClick = (element) => {
+            element.addEventListener("contextmenu", (e) => {
+                    e.preventDefault();
+            });
+        }
+        const articleImages = document.querySelectorAll("article img");
+        articleImages.forEach(image => preventRightClick(image))
+    </script>
+
+    {% endblock%}

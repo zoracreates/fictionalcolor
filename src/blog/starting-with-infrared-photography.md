@@ -8,6 +8,7 @@ Never did I think a photo of a tree in parking lot would look so magical. While 
 
 *INSERT PHOTO*
 
+
 I know this isn't the most impressive picture, but the fact that this was what my live-view showed, that was fascinating. I couldn't believe my eyes. I went on an hour photo walk and instantly became hooked.
 
 *INSERT PHOTOS*
