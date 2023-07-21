@@ -73,9 +73,3 @@ What I've just shared with you are the few takeaways and lessons I've gathered s
 - [Kolari's lens recommendation](https://kolarivision.com/lens-hotspot-list/)
 - [Robert Shea's Kolari Pocket review](https://www.youtube.com/watch?v=e0l9JV5Ji14)
 - [Boston Photography Workshops IR/UV Photography Class](https://www.bostonphotographyworkshops.com/ir-uv-photography)
-
-
-
-
-
-
