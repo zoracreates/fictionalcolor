@@ -19,11 +19,13 @@ Perhaps, like me, you're curious about how this was all possible. The human eye 
 By default modern digital cameras capture light a a full spectrum. This means they see light beyond what humans can see. To capture "normal colors", manufactures install a what's called a hot mirror, which filters out non visible light. In order to capture IR photographs, the hot mirror must be removed. A few places offer camera conversion services, two of the most popular are: [Kolari Vision](https://kolarivision.com/) and [Lifepixel](https://www.lifepixel.com/?ar=65)
 
 ## How do I choose a camera?
-Conversion service providers often have lists of cameras that can be converted, but you can convert a DSLR, mirrorless, or point-and-shoot camera. Some images are best captured in RAW format, so you can more easily pull colors in post-processing. You can also shoot JPEG, and get great photos for certain filters, for example a 590nm filter.
+Conversion service providers often have lists of cameras that can be converted, but you can convert a DSLR, mirrorless, or point-and-shoot camera. 
+
+A camera that can shoot RAW is probably best. Some images are best captured in RAW format, so you can more easily pull colors in post-processing. But, if you want to keep things simple, you can also shoot JPEG, and get great photos for certain filters, for example a 590nm filter.
 
 One big consideration is that standard DSLR viewfinders don't focus IR photos well, nor do they show the colors captured by IR. Make sure to get a camera with live view option and/or a [digital view finder](https://www.lifewire.com/what-is-a-digital-camera-viewfinder-4777338).
 
-If you are thinking of getting a camera with interchangeable lenses, you may also want to consider that some lenses produce hotspots, which appear as bright spots on your photos. These are inconvenient and hard to remove. There's a few ways to avoid them, but one place to start is by choosing a lens that is less likely to produce these. I like to use [Kolari's list of lenses](https://kolarivision.com/lens-hotspot-list/) as a place to start when researching lenses.
+You may also want to consider that some camera lenses produce hotspots, which appear as bright spots on your photos. These are inconvenient and hard to remove. There's a few ways to avoid them, but one place to start is by choosing a lens that is less likely to produce these. I like to use [Kolari's list of lenses](https://kolarivision.com/lens-hotspot-list/) as a place to start when researching lenses.
 
 ### Start small, then upgrade
 The first IR camera I used was a Canon M50 Mark II, which I rented from as part of a one day workshop provided by Boston Pathography Workshops. If you're near that area, check it out!
@@ -35,14 +37,14 @@ I'll be writing my own review on the camera soon. In the mean time, check out th
 *embed the review* https://www.youtube.com/watch?v=e0l9JV5Ji14
 
 ## Can I revert the conversion process?
-Once a camera is converted, you can't *un*-convert it. However, for a full-spectrum camera, you can purchase a hot mirror filter, which blocks out infrared light and lets you capture standard pictures. 
+For a full-spectrum camera, you can purchase a hot mirror filter, which blocks out infrared light and lets you capture standard pictures. 
 
 If you go for a partial conversion, you may not be able to do this. A partial conversion means that another filter is installed in place of the hot mirror. This limits your photos to the light captured by that filter. 
 
 With full-spectrum, you get all types of light, and you can purchase filters separately to control what light you see. Why would someone go for a partial conversion then? Filters can be expensive, and some photographers prefer a specific look.
 
 ## How I choose a filter? How does it work?
-Light forms part of what is known as the eleLight waves are measured in nanometers (nm). IR filters work by blocking out light at a certain spectrum. That's why you'll see IR filters often named based on nanometers. 
+Light waves are measured in nanometers (nm). IR filters work by blocking out light at a certain spectrum. That's why you'll see IR filters often named based on nanometers. 
 
 You can select a filter based on the color effect you're seeking. I'm still experimenting with filters, and plan to offer insights as I go.  If you're curious, Kolari has a whole [article on selecting filters](https://kolarivision.com/articles/choosing-a-filter/), including photos. Do note that this article does not cover all possible looks that you can get when manipulating color channels in post-processing.
 
