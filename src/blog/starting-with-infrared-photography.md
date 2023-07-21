@@ -1,6 +1,6 @@
 ---
 title: Starting with infrared photography
-tags: [ "Infrared Photography", "IR Photography 101"]
+tags: [ "Infrared Photography"]
 date: 2022-07-16
 description: What is infrared photography? How I got started. And what you need to know to start.
 ---
