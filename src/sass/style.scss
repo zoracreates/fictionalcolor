@@ -83,7 +83,6 @@ header {
   background-color: $primary-color;
 }
 
-
 nav {
   width: 100%;
   padding-bottom: 10px;
@@ -110,7 +109,7 @@ main {
 .tags-menu {
   background-color: $primary-color-dark;
   height: fit-content;
-  padding-top: .5em;
+  padding-top: 0.5em;
   ul li {
     list-style: none;
   }
@@ -146,7 +145,7 @@ footer ul {
   padding-left: 0;
   margin-left: 0;
   &.social {
-    margin-top: 20px
+    margin-top: 20px;
   }
 }
 
@@ -225,7 +224,7 @@ ul.social span,
   text-transform: uppercase;
 }
 
-.u-med { 
+.u-med {
   font-size: $h5-size;
 }
 
@@ -255,7 +254,6 @@ p.u-small {
   font-size: $h4-size;
   margin-bottom: 0px;
 }
-
 
 /* links and buttons*/
 a {
@@ -348,13 +346,11 @@ header nav a {
   color: $white;
 }
 
-
-
 .logo {
   @include bold-display-font;
   font-size: $h3-size;
   text-transform: none;
-  background: -webkit-linear-gradient(150deg, $secondary-color, #EE4F4F);
+  background: -webkit-linear-gradient(150deg, $secondary-color, #ee4f4f);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -367,8 +363,6 @@ header nav a {
   font-style: italic;
 }
 
-
-
 .hero-band .h1-font {
   @extend h1;
 }
@@ -380,7 +374,6 @@ header nav a {
   font-size: $h2-size * 1.12;
 }
 
-
 p.hero-text {
   line-height: 1.2;
 }
@@ -390,7 +383,6 @@ p.hero-text {
 #post header {
   padding: 0px;
   margin-bottom: 0px;
-
 }
 
 #post main {
@@ -408,28 +400,37 @@ nav.wrapper-lg {
   background-color: $primary-color;
 }
 
-#post article{
+#post article {
   padding-bottom: 1.45rem;
-    p:last-child {
-      margin-bottom: 0px;
+  p:last-child {
+    margin-bottom: 0px;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol {
+    max-width: 720px;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
- nav[aria-label="breadcrumbs"] {
-
+nav[aria-label="breadcrumbs"] {
   border-bottom: 0px;
-  padding-top: 35px; 
+  padding-top: 35px;
   padding-bottom: 20px;
-
-  
-
 
   li {
     font-weight: 700;
     padding-right: 7px;
     &::after {
-      content: '/';
-      font-size: .8em;
+      content: "/";
+      font-size: 0.8em;
       color: $text-color;
     }
 
@@ -442,9 +443,7 @@ nav.wrapper-lg {
         background-color: $link-color;
       }
     }
-
   }
-
 }
 
 nav[aria-label="breadcrumbs"] ol.nav-list {
@@ -463,7 +462,6 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
       padding-left: 2rem;
     }
   }
-
 }
 
 #post .image-wrapper {
@@ -479,7 +477,8 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
   padding: 35px 0px;
 }
 
-.post-nav div, nav div:last-child {
+.post-nav div,
+nav div:last-child {
   margin-bottom: 0;
 }
 
@@ -528,16 +527,12 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
 
   &.back-arrow {
     padding-right: 0.5rem;
-
   }
 
   &.forward-arrow {
     padding-left: 0.5rem;
   }
 }
-
-
-
 
 .post-list .u-small {
   margin-top: 5px;
@@ -559,20 +554,18 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
   margin-bottom: 10px;
 }
 
-
 nav .page-number {
   margin: 0px 0px 5px 0px;
   padding-top: 35px;
   font-weight: 700;
 }
- 
 
 .post-nav {
   padding: 35px 0;
 }
 
 .page-number + .post-nav {
-  padding-top: 0px
+  padding-top: 0px;
 }
 
 ul.post-list {
@@ -604,7 +597,6 @@ a.tag {
 .post-list .featured-image {
   margin: 0px;
 }
-
 
 /* home */
 .video-container,
@@ -679,7 +671,7 @@ a.tag {
   margin-bottom: 0px;
 }
 
-#home .hero-band  {
+#home .hero-band {
   margin-bottom: 0px;
 }
 
@@ -693,7 +685,7 @@ a.tag {
   @include banner-background("/images/background/flower-375.jpg", 105px);
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   #home header {
     @include banner-background("/images/background/flower-768.jpg", 115px);
   }
@@ -702,13 +694,13 @@ a.tag {
   }
 }
 
-@media (min-width: 1024px) { 
+@media (min-width: 1024px) {
   #home header {
     @include banner-background("/images/background/flower-1024.jpg", 250px);
   }
 }
 
-@media (min-width: 1440px) { 
+@media (min-width: 1440px) {
   #home header {
     @include banner-background("/images/background/flower-1440.jpg", 350px);
   }
@@ -759,7 +751,6 @@ blockquote span {
 }
 
 @media (min-width: 768px) {
-
   .cols-1fr-2fr,
   .cols-3fr-1fr {
     display: flex;
@@ -842,13 +833,12 @@ blockquote span {
     .post-nav-title {
       display: flex;
     }
-    
   }
 
   nav .page-number {
     text-align: center;
     margin-bottom: -27px;
-   }
+  }
 
   .post-nav div {
     margin-bottom: 0;
@@ -865,8 +855,6 @@ blockquote span {
     max-width: 600px;
   }
 
-
-
   @supports (display: grid) {
     .cols-1fr-1fr {
       display: grid;
@@ -876,6 +864,5 @@ blockquote span {
     .cols-1fr-1fr {
       grid-template-columns: repeat(2, 1fr);
     }
-
   }
 }
