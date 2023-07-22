@@ -132,6 +132,10 @@ footer a {
   text-decoration: none;
 }
 
+footer p.u-small a {
+  text-decoration: underline;
+}
+
 header ul.nav-list {
   padding: 0px 0px 0px 35px;
   margin-bottom: 0px;
@@ -745,10 +749,17 @@ blockquote span {
   }
 }
 
+#credits main {
+ padding-top: 0px;
+}
+
 /* Gird classes */
-.cols-1fr-1fr > .col {
+.cols-1fr-1fr > .col,
+.cols-1fr-1fr-1fr > .col {
   margin-bottom: 35px;
 }
+
+
 
 @media (min-width: 768px) {
   .cols-1fr-2fr,
@@ -756,6 +767,18 @@ blockquote span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .cols-1fr-1fr-1fr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .cols-1fr-1fr-1fr > .col {
+    flex-basis: 30%;
+    margin-left: 2%;
   }
 
   .cols-1fr-2fr > .col {
@@ -866,3 +889,6 @@ blockquote span {
     }
   }
 }
+
+
+

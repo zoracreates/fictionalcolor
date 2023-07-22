@@ -1,13 +1,13 @@
 ---
 title: Starting with infrared photography
 tags: [ "Infrared Photography"]
-date: 2022-07-16
+date: 2023-07-16
 description: What is infrared photography? How I got started. And what you need to know to start.
 ---
 Never did I think a photo of a tree in parking lot would look so magical. While that description sounds like something out of young adult fantasy novel (no shame, love those), that's how I'd describe the first infrared (IR) photo I took.  
 
 *INSERT PHOTO*
-
+  {% image "./src/images/about/me.jpg", "Zoraida, a woman with black curly hair and large glasses black glasses, smiling widely", date | getYear , "hello, it's me" %}
 
 I know this isn't the most impressive picture, but the fact that this was what my live-view showed, that was fascinating. I couldn't believe my eyes. I went on an hour photo walk and instantly became hooked.
 

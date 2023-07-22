@@ -1,0 +1,20 @@
+{% extends "layouts/secondary-base.html" %}
+{% set pageId = "credits" %}
+
+{% block mainContent %}
+    <main>
+        <div class="wrapper-lg block-center cols-1fr-1fr-1fr">
+        
+            {% for credit in imageCredits.credits %}
+                <figure class="col">
+                    {%image  credit.imgSrc , credit.alt %} 
+                    <figcaption>
+                        Photo by <a href="{{credit.url}}"> {{ credit.author }}</a>
+                    </figcaption>
+                </figure>
+            {% endfor %}
+
+        </div>
+    </main>
+
+{% endblock %}

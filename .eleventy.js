@@ -4,7 +4,7 @@ const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const Image = require('@11ty/eleventy-img');
 const path = require("path");
 
-async function imageShortcode(src, alt, cryear = null, sizes = '(min-width: 1024px) 100vw, 50vw') {
+async function imageShortcode(src, alt, cryear = false, caption = false, sizes = '(min-width: 1024px) 100vw, 50vw') {
 
     let metadata = await Image(src, {
         widths: [600, 900, 1500],
@@ -30,14 +30,22 @@ async function imageShortcode(src, alt, cryear = null, sizes = '(min-width: 1024
         decoding: 'async',
     };
 
+    // You bet we throw an error on missing alt in `imageAttributes` (alt='' works okay)
     const imageHTML = Image.generateHTML(metadata, imageAttributes);
 
     if (cryear) {
-        return `<figure> ${imageHTML} <figcaption>&copy; Zoraida Cabrera-Mieles  ${cryear} </figcaption></figure>`
+        if (caption) {
+            caption = `${caption} <br>`
+        }
+        else {
+            caption = ""
+        }
+        return `<figure> ${imageHTML} <figcaption>${caption}&copy; Zoraida Cabrera-Mieles  ${cryear} </figcaption></figure>`
+    } else if (caption) {
+        return `<figure> ${imageHTML} <figcaption>${caption}</figcaption></figure>`
     } else {
-        return Image.generateHTML(metadata, imageAttributes);
+        return imageHTML;
     }
-    // You bet we throw an error on missing alt in `imageAttributes` (alt='' works okay)
     
 }
 
@@ -74,6 +82,11 @@ module.exports = function (eleventyConfig) {
         return formatedDate
     });
 
+
+    eleventyConfig.addFilter('getYear', function (date) {
+        date = new Date(date)
+        return  date.getFullYear();
+    });
 
 
     //collections

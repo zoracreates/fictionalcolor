@@ -1,0 +1,10 @@
+{
+    "credits": [
+      {
+        "imgSrc": "./src/images/credits/pexels-evie-shaffer-camera.jpg",
+        "alt": "Hand holding a camera, against a white wall, the shadow of a branch shwowing in the corner",
+        "author": "Evie Shaffer",
+        "url": "https://www.pexels.com/photo/person-holding-black-dslr-camera-2923672/"
+      }
+    ]
+}
