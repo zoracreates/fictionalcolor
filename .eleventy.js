@@ -4,7 +4,7 @@ const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const Image = require('@11ty/eleventy-img');
 const path = require("path");
 
-async function imageShortcode(src, alt, sizes = '(min-width: 1024px) 100vw, 50vw') {
+async function imageShortcode(src, alt, cryear = null, sizes = '(min-width: 1024px) 100vw, 50vw') {
 
     let metadata = await Image(src, {
         widths: [600, 900, 1500],
@@ -30,9 +30,15 @@ async function imageShortcode(src, alt, sizes = '(min-width: 1024px) 100vw, 50vw
         decoding: 'async',
     };
 
+    const imageHTML = Image.generateHTML(metadata, imageAttributes);
 
+    if (cryear) {
+        return `<figure> ${imageHTML} <figcaption>&copy; Zoraida Cabrera-Mieles  ${cryear} </figcaption></figure>`
+    } else {
+        return Image.generateHTML(metadata, imageAttributes);
+    }
     // You bet we throw an error on missing alt in `imageAttributes` (alt='' works okay)
-    return Image.generateHTML(metadata, imageAttributes);
+    
 }
 
 
