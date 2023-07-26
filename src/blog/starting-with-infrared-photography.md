@@ -22,7 +22,7 @@ By default modern digital cameras capture light a a full spectrum. This means th
 ## How do I choose a camera?
 Conversion service providers often have lists of cameras that can be converted, but you can convert a DSLR, mirrorless, or point-and-shoot camera. 
 
-A camera that can shoot RAW is probably best. Some images are best captured in RAW format, so you can more easily pull colors in post-processing. But, if you want to keep things simple, you can also shoot JPEG, and get great photos for certain filters, for example a 590nm filter.
+A camera that can shoot RAW is probably best. Images are best captured in RAW format, so you have more flexibility with colors during post-processing. But, if you want to keep things simple, and don't plan on doing much post-processing, you can also shoot JPEG, just make sure you're setting a custom whitebalance on your camera for best results. Most cameras will let you set one, but instructions vary.
 
 One big consideration is that standard DSLR viewfinders don't focus IR photos well, nor do they show the colors captured by IR. Make sure to get a camera with live view option and/or a [digital view finder](https://www.lifewire.com/what-is-a-digital-camera-viewfinder-4777338).
 
