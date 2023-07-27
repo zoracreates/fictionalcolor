@@ -4,10 +4,10 @@ tags: [ "Infrared Photography"]
 date: 2023-07-16
 description: What is infrared photography? How I got started. And what you need to know to start.
 ---
-Never did I think a photo of a tree in parking lot would look so magical. While that description sounds like something out of young adult fantasy novel (no shame, love those), that's how I'd describe the first infrared (IR) photo I took.  
+Never did I think a tree in parking lot could look so magical. While that description sounds like something out of young adult fantasy novel (no shame, love those), that's how I'd describe the first infrared (IR) photos I took. 
 
 *INSERT PHOTO*
-  {% image "./src/images/about/me.jpg", "Zoraida, a woman with black curly hair and large glasses black glasses, smiling widely", date | getYear , "hello, it's me" %}
+  {% image "./src/images/about/me.jpg", "Zoraida, a woman with black curly hair and large glasses black glasses, smiling widely", date | getYear , "Ph" %}
 
 I know this isn't the most impressive picture, but the fact that this was what my live-view showed, that was fascinating. I couldn't believe my eyes. I went on an hour photo walk and instantly became hooked.
 
@@ -56,7 +56,7 @@ Shooting in direct sunlight typically offers high contrast IR photos. As IR phot
 
 You can also get great results by matching an organic material with an inorganic material. Organic materials will often reflect lots of infrared light, giving them interesting colors, whereas inorganic materials will often appear more washed out or dark (specific colors depend on the filter). Combining the two subjects yields some dramatic effects. This is why you often see IR pictures of trees and mountains, or trees and buildings.
 
-In the picture below, the sailboats had red sails, but they appear fully white. You can see that people also have a ghostly white look. 
+In the picture below, the sailboat had a red sail but it shows as near white. You can see that people also have a ghostly white look. 
 
 *INSERT PIC OF SAIL BOAT*
 
