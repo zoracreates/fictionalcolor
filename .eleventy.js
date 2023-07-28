@@ -7,7 +7,7 @@ const path = require("path");
 async function imageShortcode(src, alt, cryear = false, caption = false, sizes = '(min-width: 1024px) 100vw, 50vw') {
 
     let metadata = await Image(src, {
-        widths: [600, 900, 1500],
+        widths: [600, 720, 900, 1500],
         formats: [null],
         urlPath: '/images/optimized',
         outputDir: './public/images/optimized',

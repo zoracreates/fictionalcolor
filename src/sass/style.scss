@@ -450,6 +450,31 @@ nav[aria-label="breadcrumbs"] {
   }
 }
 
+#post .col figure {
+  margin-bottom: 0px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: $h6-size;
+  font-style: italic;
+  color: #ddd;
+}
+
+.max500-img,
+.max720-img  {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max500-img {
+  max-width: 500px;
+}
+
+.max720-img {
+  max-width: 720px;
+}
+
 nav[aria-label="breadcrumbs"] ol.nav-list {
   margin: 0px;
   padding: 0px;
@@ -459,6 +484,7 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
   margin-top: 0px;
 }
 
+
 #post {
   main {
     ol,
@@ -466,15 +492,6 @@ nav[aria-label="breadcrumbs"] ol.nav-list {
       padding-left: 2rem;
     }
   }
-}
-
-#post .image-wrapper {
-  margin: auto;
-  display: block;
-  margin-top: 60px;
-  max-width: 950px;
-  width: 92%;
-  margin-bottom: 60px;
 }
 
 #post > div {
@@ -753,9 +770,13 @@ blockquote span {
  padding-top: 0px;
 }
 
+#credits img {
+  display: block;
+  margin: 0 auto;
+}
+
 /* Gird classes */
-.cols-1fr-1fr > .col,
-.cols-1fr-1fr-1fr > .col {
+.cols-1fr-1fr > .col {
   margin-bottom: 35px;
 }
 
@@ -802,9 +823,17 @@ blockquote span {
 
   @supports (display: grid) {
     .cols-1fr-2fr,
-    .cols-3fr-1fr {
+    .cols-3fr-1fr,
+    .cols-1fr-1fr-1fr {
       display: grid;
       grid-gap: 0px 35px;
+    }
+
+    .cols-1fr-1fr-1fr > .col {
+      img {
+        display: block;
+        margin: 0px auto;
+      }
     }
 
     .cols-3fr-1fr {
@@ -813,6 +842,10 @@ blockquote span {
 
     .cols-1fr-2fr {
       grid-template-columns: 1fr 2fr;
+    }
+
+    .cols-1fr-1fr-1fr {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

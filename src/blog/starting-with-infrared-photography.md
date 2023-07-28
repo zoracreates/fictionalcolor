@@ -3,21 +3,54 @@ title: Starting with infrared photography
 tags: [ "Infrared Photography"]
 date: 2023-07-16
 description: What is infrared photography? How I got started. And what you need to know to start.
+feature: "2023-07/feature-01.jpg"
+featureAlt: "Collage of two images. At the top left corner: A gray concrete bridge curves over a river, a deep gray blue sky above. Bright cream-colored plants and trees frame the scene. At the botoom right corner: Hand holding a camera, against a white wall, the shadow of a branch shwowing in the corner"
 ---
 Never did I think a tree in parking lot could look so magical. While that description sounds like something out of young adult fantasy novel (no shame, love those), that's how I'd describe the first infrared (IR) photos I took. 
 
-*INSERT PHOTO*
-  {% image "./src/images/about/me.jpg", "Zoraida, a woman with black curly hair and large glasses black glasses, smiling widely", date | getYear , "Ph" %}
+<div class="max500-img">
+  {% image "./src/images/blog/posts/2023-07/first-photo.jpg", "A tree with cascading blue leaves rises over a fence in a parking log", date | getYear %}
+</div>
 
-I know this isn't the most impressive picture, but the fact that this was what my live-view showed, that was fascinating. I couldn't believe my eyes. I went on an hour photo walk and instantly became hooked.
+The fact that this was what my live-view showed, that was fascinating. I couldn't believe my eyes. I went on an hour photo walk and instantly became hooked.
 
-*INSERT PHOTOS*
+<div class="wrapper-lg block-center cols-1fr-1fr-1fr">
+        
+
+<div class="col">
+  {% image "./src/images/blog/posts/2023-07/590nm-esplanade-1.jpg", "The curving coast of a reiver reflects on the water. On the shore a soft pink plants and trees, with a weeping willow in the middle", date | getYear %}
+</div>
+
+<div class="col">
+  {% image "./src/images/blog/posts/2023-07/590nm-esplanade-3.jpg", "A monochrome cream colored photograph. A bridge is viable through a layer of branches and leaves, the Charles River slightly visible underneath.", date | getYear %}
+</div>
+
+
+  <div class="col">
+    {% image "./src/images/blog/posts/2023-07/590nm-esplanade-2.jpg", "The profile of a small white flower appearing over some tall pink or cream colored grass, a gray scene of cloud a and a river, slightly peaks through the grass.", date | getYear %}
+  </div>
+
+  <div class="col">
+  {% image "./src/images/blog/posts/2023-07/590nm-esplanade-4.jpg", "A gray concrete bridge curves over a river, a deep gray blue sky above. Bright yellow plants and trees frame the scene.", date | getYear %}
+  </div>
+
+
+  <div class="col">
+    {% image "./src/images/blog/posts/2023-07/590nm-esplanade-5.jpg", "A bridge over a river, blue plants at either end. ", date | getYear %}
+  </div>
+
+
+  <div class="col">
+  {% image "./src/images/blog/posts/2023-07/590nm-esplanade-6.jpg", "A concrete tower rises behind pink tress, a bright light blue sky in the background.", date | getYear %}
+  </div>
+
+</div>
 
 ## What's IR Photography?
 Perhaps, like me, you're curious about how this was all possible. The human eye can only see a small part of the light spectrum. We see this light reflected in the form of color. IR photography captures light not visible by the human eye, by using IR converted cameras and filters. 
 
 ## What's different about IR cameras?
-By default modern digital cameras capture light a a full spectrum. This means they see light beyond what humans can see. To capture "normal colors", manufactures install a what's called a hot mirror, which filters out non visible light. In order to capture IR photographs, the hot mirror must be removed. A few places offer camera conversion services, two of the most popular are: [Kolari Vision](https://kolarivision.com/) and [Lifepixel](https://www.lifepixel.com/?ar=65)
+By default modern digital cameras capture light a a full spectrum. This means they see light beyond what humans can see. To capture "normal colors", manufactures install a what's called a hot mirror, which filters out non visible light. In order to capture IR photographs, the hot mirror must be removed. A few places offer camera conversion services, two of the most popular are: [Kolari Vision](https://kolarivision.com/) and [Lifepixel](https://www.lifepixel.com/?ar=65).
 
 ## How do I choose a camera?
 Conversion service providers often have lists of cameras that can be converted, but you can convert a DSLR, mirrorless, or point-and-shoot camera. 
@@ -35,7 +68,12 @@ After class, I didn't want to invest in converting a mirrorless or a DSLR camera
 
 I'll be writing my own review on the camera soon. In the mean time, check out this review by Robert Shea.
 
-*embed the review* https://www.youtube.com/watch?v=e0l9JV5Ji14
+<div class="wrapper-sm block-center">
+  <div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/e0l9JV5Ji14" title="YouTube, Kolari Pocket Review by Rober Shea" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </iframe>
+  </div>
+</div>
 
 ## Can I revert the conversion process?
 For a full-spectrum camera, you can purchase a hot mirror filter, which blocks out infrared light and lets you capture standard pictures. 
@@ -58,7 +96,9 @@ You can also get great results by matching an organic material with an inorganic
 
 In the picture below, the sailboat had a red sail but it shows as near white. You can see that people also have a ghostly white look. 
 
-*INSERT PIC OF SAIL BOAT*
+<div class="max720-img">
+  {% image "./src/images/blog/posts/2023-07/sailboat.jpg", "A completely white sailboat, being docked on the Charles River by a man who looks completely white due to low infrared light. Peach colored bushes frame the scene. More white sail boats in the background in the distance.", date | getYear %}
+</div>
 
 ## Does this require a lot of post-processing work?
 It can, but not necessarily. As I said, some forms of IR photography look great with JPEG, and you may not even need to edit them. That said shooting RAW, and learning your way around color manipulation, can offer many more possibilities, and help you grow as a photographer.
