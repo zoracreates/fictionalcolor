@@ -465,6 +465,7 @@ figcaption {
 .max720-img  {
   margin-left: auto;
   margin-right: auto;
+  width: 92%;
 }
 
 .max500-img {
@@ -770,7 +771,8 @@ blockquote span {
  padding-top: 0px;
 }
 
-#credits img {
+#credits img,
+#post img {
   display: block;
   margin: 0 auto;
 }
@@ -779,8 +781,6 @@ blockquote span {
 .cols-1fr-1fr > .col {
   margin-bottom: 35px;
 }
-
-
 
 @media (min-width: 768px) {
   .cols-1fr-2fr,

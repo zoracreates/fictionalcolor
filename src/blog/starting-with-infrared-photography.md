@@ -14,7 +14,7 @@ Never did I think a tree in parking lot could look so magical. While that descri
 
 The fact that this was what my live-view showed, that was fascinating. I couldn't believe my eyes. I went on an hour photo walk and instantly became hooked.
 
-<div class="wrapper-lg block-center cols-1fr-1fr-1fr">
+<div class="wrapper-lg img-grid block-center cols-1fr-1fr-1fr">
         
 
 <div class="col">
