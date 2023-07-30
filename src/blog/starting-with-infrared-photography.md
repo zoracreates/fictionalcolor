@@ -4,7 +4,7 @@ tags: [ "Infrared Photography"]
 date: 2023-07-30
 description: What is infrared photography? How I got started. And what you need to know to start.
 feature: "2023-07/feature-01.jpg"
-featureAlt: "Collage of two images. At the top left corner: A gray concrete bridge curves over a river, a deep gray blue sky above. Bright cream-colored plants and trees frame the scene. At the botoom right corner: Hand holding a camera, against a white wall, the shadow of a branch shwowing in the corner"
+featureAlt: "Collage of two images. At the top left corner: A gray concrete bridge curves over a river, a deep gray-blue sky above. Bright cream-colored plants and trees frame the scene. At the bottom right corner: Hand holding a camera against a white wall, the shadow of a branch showing in the corner."
 ---
 Never did I think a tree in parking lot could look so magical. While that description sounds like something out of young adult fantasy novel (no shame, love those), that's how I'd describe the first infrared (IR) photos I took. 
 
